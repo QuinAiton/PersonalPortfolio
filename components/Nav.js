@@ -1,9 +1,9 @@
 import React from 'react';
-
+import NavStyles from '../styles/Nav.module.scss';
 const Nav = () => {
   return (
-    <div className>
-      <ul>
+    <div className={NavStyles.container}>
+      <ul className={NavStyles.items}>
         <li>Logo</li>
         <div>
           <li>About</li>
