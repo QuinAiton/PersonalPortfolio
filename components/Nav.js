@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className={NavStyles.container}>
       <ul className={NavStyles.items}>
-        <Image src='/logo.png' alt='logo' height={150} width={150} />
+        <Image src='/logo.png' alt='logo' height={130} width={130} />
         <div className={NavStyles.links}>
           <li>
             <a>About</a>
