@@ -6,14 +6,26 @@ const Nav = () => {
       <ul className={NavStyles.items}>
         <li>Logo</li>
         <div>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Projects</li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Skills</a>
+          </li>
+          <li>
+            <a>Projects</a>
+          </li>
         </div>
         <div>
-          <li>Github</li>
-          <li>Linkedin</li>
-          <li>Contact Me</li>
+          <li>
+            <a>Github</a>
+          </li>
+          <li>
+            <a>Linkedin</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
         </div>
       </ul>
     </div>
