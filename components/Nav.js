@@ -1,11 +1,14 @@
 import React from 'react';
 import NavStyles from '../styles/Nav.module.scss';
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { VscGithub } from 'react-icons/vsc';
+import Image from 'next/image';
 const Nav = () => {
   return (
     <div className={NavStyles.container}>
       <ul className={NavStyles.items}>
-        <li>Logo</li>
-        <div>
+        <Image src='/logo.png' alt='logo' height={150} width={150} />
+        <div className={NavStyles.links}>
           <li>
             <a>About</a>
           </li>
@@ -16,15 +19,21 @@ const Nav = () => {
             <a>Projects</a>
           </li>
         </div>
-        <div>
+        <div className={NavStyles.contact}>
           <li>
-            <a>Github</a>
+            <a>
+              <VscGithub />
+            </a>
           </li>
           <li>
-            <a>Linkedin</a>
+            <a>
+              <FaLinkedin />
+            </a>
           </li>
           <li>
-            <a>Contact</a>
+            <a>
+              <FaEnvelope />
+            </a>
           </li>
         </div>
       </ul>
