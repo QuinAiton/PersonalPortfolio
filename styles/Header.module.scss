@@ -1,0 +1,26 @@
+.container {
+  min-height: 100vh;
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .content {
+    color: #fff;
+    font-size: 2em;
+    margin: auto auto;
+    height: 100vh;
+    span {
+      background-image: linear-gradient(
+        to right,
+        #8400ff,
+        #e400c1,
+        #ff0080,
+        #ff0047,
+        #ff3d07
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

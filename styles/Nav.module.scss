@@ -22,7 +22,7 @@
   }
 
   .links a {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 5px;
     text-decoration: none;
     -webkit-background-clip: text;
@@ -74,5 +74,13 @@
     font-size: 2em;
     padding-top: 0.1em;
     padding-left: 0.04em;
+  }
+
+  .image {
+    transition: transform 500ms ease;
+  }
+
+  .image:hover {
+    transform: rotate(-45deg);
   }
 }
