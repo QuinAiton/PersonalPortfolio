@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeaderStyles from '../styles/Header.module.scss';
 const Header = () => {
   return (
     <div className={HeaderStyles.container}>
-      <p className={HeaderStyles.content}>
-        Hello, my name is <span>Quinten Aiton.</span> <br />I am a full-stack
-        developer with a passion for innovative design and green tech.
-      </p>
-      {}
+      <div className={HeaderStyles.typing}>
+        <p>
+          Hi, My Name is <span>Quinten Aiton.</span>
+        </p>
+        <p>I am a full stack developer.</p>
+        <p>I Like Creating things for the Web and green tech.</p>
+      </div>
+      <div className={HeaderStyles.arrow}></div>
     </div>
   );
 };
