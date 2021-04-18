@@ -9,6 +9,7 @@
   .typing {
     display: flex;
     flex-direction: column;
+    // justify-content: center;
     align-items: center;
     width: auto;
     font-size: 2em;
@@ -38,7 +39,7 @@
 
     p:nth-child(1) {
       -webkit-animation: type 2s steps(40, end);
-      animation: type 3.5s steps(40, end);
+      animation: type 2s steps(40, end);
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
     }
@@ -46,19 +47,19 @@
     p:nth-child(2) {
       opacity: 0;
       -webkit-animation: type 2s steps(40, end);
-      animation: type 3.5s steps(40, end);
-      -webkit-animation-delay: 3.5s;
-      animation-delay: 3.5s;
+      animation: type 2s steps(40, end);
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
     }
 
     p:nth-child(3) {
       opacity: 0;
-      -webkit-animation: type 5s steps(40, end);
-      animation: type 3.5s steps(40, end);
-      -webkit-animation-delay: 7s;
-      animation-delay: 7s;
+      -webkit-animation: type 2s steps(40, end);
+      animation: type 2s steps(40, end);
+      -webkit-animation-delay: 4s;
+      animation-delay: 4s;
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
     }
