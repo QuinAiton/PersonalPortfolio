@@ -22,17 +22,17 @@ const Nav = () => {
         <div className={NavStyles.contact}>
           <li>
             <a>
-              <VscGithub />
+              <VscGithub className={NavStyles.icon} />
             </a>
           </li>
           <li>
             <a>
-              <FaLinkedin />
+              <FaLinkedin className={NavStyles.icon} />
             </a>
           </li>
           <li>
             <a>
-              <FaEnvelope />
+              <FaEnvelope className={NavStyles.icon} />
             </a>
           </li>
         </div>
