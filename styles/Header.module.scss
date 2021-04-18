@@ -1,26 +1,52 @@
 .container {
   min-height: 100vh;
-  margin-top: 30vh;
+  padding-top: 30vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   .content {
-    color: #fff;
     font-size: 2em;
-    margin: auto auto;
-    height: 100vh;
-    span {
-      background-image: linear-gradient(
-        to right,
-        #8400ff,
-        #e400c1,
-        #ff0080,
-        #ff0047,
-        #ff3d07
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(60, end), blink-caret 0.75s step-end infinite;
+  }
+  span {
+    background-image: linear-gradient(
+      to right,
+      #8400ff,
+      #e400c1,
+      #ff0080,
+      #ff0047,
+      #ff3d07
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    span:hover {
+      transition: all 600ms cubic-bezier(0, 0.94, 0.8, 1);
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 60%;
+      }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from,
+      to {
+        border-color: transparent;
+      }
+      20% {
+        border-color: rgb(255, 255, 255);
+      }
     }
   }
 }

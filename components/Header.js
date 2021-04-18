@@ -7,6 +7,7 @@ const Header = () => {
         Hello, my name is <span>Quinten Aiton.</span> <br />I am a full-stack
         developer with a passion for innovative design and green tech.
       </p>
+      {}
     </div>
   );
 };
