@@ -1,3 +1,57 @@
 .container {
+  width: 100vw;
+  padding-top: 20px;
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  align-items: center;
+
+  .title {
+    text-align: center;
+    .underline {
+      width: 150px;
+      border: 1px solid #000;
+    }
+  }
+
+  .interests {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .hex {
+      margin: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 57.735px;
+      background: #13405a;
+      position: relative;
+    }
+    .hex::before {
+      content: '';
+      position: absolute;
+      top: -28.8675px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 28.8675px solid #13405a;
+    }
+    .hex::after {
+      content: '';
+      position: absolute;
+      bottom: -28.8675px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 28.8675px solid #13405a;
+    }
+  }
 }
