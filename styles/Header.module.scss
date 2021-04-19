@@ -1,3 +1,15 @@
+$gradient: linear-gradient(
+  to left,
+  #a348f8,
+  #ff00ba,
+  #ff2f76,
+  #ff783b,
+  #ffb100
+);
+
+$primary: #fff;
+$secondary: #000;
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -15,14 +27,7 @@
     width: auto;
     font-size: 2em;
     span {
-      background-image: linear-gradient(
-        to right,
-        #8400ff,
-        #e400c1,
-        #ff0080,
-        #ff0047,
-        #ff3d07
-      );
+      background-image: $gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       span:hover {
@@ -33,7 +38,7 @@
     p {
       margin: 10 auto;
       width: 100%;
-      border-right: 0.15em solid rgb(255, 255, 254);
+      border-right: 0.15em solid $primary;
       white-space: nowrap;
       overflow: hidden;
     }
@@ -82,8 +87,8 @@
       margin: -20px 0 0 -20px;
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
-      border-right: 2px #fff solid;
-      border-bottom: 2px #fff solid;
+      border-right: 2px $primary solid;
+      border-bottom: 2px $primary solid;
     }
 
     .arrow:before {
@@ -92,8 +97,8 @@
       height: 20px;
       top: 50%;
       margin: -10px 0 0 -10px;
-      border-right: 1px #fff solid;
-      border-bottom: 1px #fff solid;
+      border-right: 2px $primary solid;
+      border-bottom: 2px $primary solid;
       animation: arrow 2s infinite;
     }
   }
@@ -108,7 +113,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 0.15em solid orange;
+    border-right: 0.15em solid $primary;
   }
   100% {
     opacity: 1;
@@ -124,7 +129,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: 0.15em solid orange;
+    border-right: 0.15em solid $primary;
   }
   100% {
     opacity: 1;
