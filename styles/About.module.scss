@@ -6,72 +6,89 @@ $gradient: linear-gradient(
   #ff783b,
   #ffb100
 );
-
 $primary: #fff;
 $secondary: #000;
+
 .container {
   width: 100vw;
   padding-top: 20px;
   color: #000;
   background-color: $primary;
-  display: flex;
-  flex-direction: column;
   height: 100vh;
-  align-items: center;
 
   .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     .underline {
       width: 150px;
       border: 1px solid $secondary;
     }
   }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-  .interests {
-    margin: auto auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    .hex {
-      margin: 50px;
+    .interests {
+      margin: auto auto;
+      width: 100%;
       display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .interestCard {
+        display: flex;
+        align-items: center;
+        p {
+          width: 15vw;
+        }
+
+        .hex {
+          margin: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 57.735px;
+          background-image: $gradient;
+          position: relative;
+        }
+        .hex::before {
+          content: '';
+          position: absolute;
+          top: -28.8675px;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 28.8675px solid $secondary;
+        }
+        .hex::after {
+          content: '';
+          position: absolute;
+          bottom: -28.8675px;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-top: 28.8675px solid $secondary;
+          background: $gradient;
+        }
+      }
+    }
+    .bio {
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100px;
-      height: 57.735px;
-      background-image: $gradient;
-      position: relative;
-    }
-    .hex::before {
-      content: '';
-      position: absolute;
-      top: -28.8675px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 28.8675px solid $secondary;
-    }
-    .hex::after {
-      content: '';
-      position: absolute;
-      bottom: -28.8675px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-top: 28.8675px solid $secondary;
-    }
-  }
-  .interestCard {
-    display: flex;
-    align-items: center;
-    p {
-      width: 15vw;
+
+      img {
+        border-image: 1px solid $secondary;
+        border-radius: 50%;
+      }
     }
   }
 }
