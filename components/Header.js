@@ -10,7 +10,8 @@ const Header = () => {
         <p>I am a full stack developer.</p>
         <p>I Like Creating things for the Web and green tech.</p>
       </div>
-      <div className={HeaderStyles.arrow}></div>
+      <p className={HeaderStyles.explore}> Explore </p>
+      <div className={HeaderStyles.arrow} />
     </div>
   );
 };
