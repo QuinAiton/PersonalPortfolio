@@ -1,14 +1,6 @@
-$gradient: linear-gradient(
-  to left,
-  #a348f8,
-  #ff00ba,
-  #ff2f76,
-  #ff783b,
-  #ffb100
-);
-
-$primary: #fff;
-$secondary: #000;
+$text: #fff;
+$primary: #adefd1ff;
+$secondary: #101820ff;
 
 .container {
   min-height: 100vh;
@@ -27,9 +19,7 @@ $secondary: #000;
     width: auto;
     font-size: 2em;
     span {
-      background-image: $gradient;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: $primary;
       span:hover {
         transition: all 600ms cubic-bezier(0, 0.94, 0.8, 1);
       }

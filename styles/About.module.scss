@@ -6,15 +6,16 @@ $gradient: linear-gradient(
   #ff783b,
   #ffb100
 );
-$primary: #fff;
-$secondary: #000;
+$text: #fff;
+$primary: #adefd1ff;
+$secondary: #101820ff;
 
 .container {
   width: 100vw;
-  padding-top: 20px;
-  color: #000;
-  background-color: $primary;
   height: 100vh;
+  padding-top: 20px;
+  color: $primary;
+  background-color: $secondary;
 
   .title {
     display: flex;
@@ -23,7 +24,7 @@ $secondary: #000;
     text-align: center;
     .underline {
       width: 150px;
-      border: 1px solid $secondary;
+      border: 1px solid $text;
     }
   }
   .content {
@@ -89,6 +90,10 @@ $secondary: #000;
 
       img {
         border-radius: 50%;
+      }
+      p {
+        background-color: $primary;
+        color: #000;
       }
     }
   }
