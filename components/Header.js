@@ -8,10 +8,9 @@ const Header = () => {
         <p>
           Hi, My Name is <span>Quinten Aiton.</span>
         </p>
-        <p>I am a full stack developer.</p>
+        <p>I am a Victoria, BC full-Stack Developer.</p>
         <p>
-          I Love technology with a purpose and helping bring peoples ideas to
-          life.
+          I specialize in creating exceptional digital experiences for the web.
         </p>
       </div>
       <Fade>

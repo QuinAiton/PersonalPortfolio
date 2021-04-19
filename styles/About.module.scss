@@ -27,7 +27,9 @@ $secondary: #000;
     }
   }
   .content {
+    height: 100%;
     display: grid;
+    margin: auto auto;
     grid-template-columns: repeat(3, 1fr);
 
     .interests {
@@ -51,7 +53,7 @@ $secondary: #000;
           align-items: center;
           width: 100px;
           height: 57.735px;
-          background-image: $gradient;
+          background: $secondary;
           position: relative;
         }
         .hex::before {
@@ -86,7 +88,6 @@ $secondary: #000;
       align-items: center;
 
       img {
-        border-image: 1px solid $secondary;
         border-radius: 50%;
       }
     }
