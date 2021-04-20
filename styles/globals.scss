@@ -1,7 +1,10 @@
+$text: #fff;
+$primary: #adefd1ff;
+$secondary: #192633;
 html,
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: $secondary;
+  color: $text;
   height: 100vh;
   width: 100vw;
   padding: 0;

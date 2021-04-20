@@ -1,0 +1,142 @@
+$text: #fff;
+$primary: #adefd1ff;
+$secondary: #192633;
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20px;
+  color: $primary;
+  background-color: $secondary;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .underline {
+      width: 150px;
+      border: 1px solid $text;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: none;
+
+    // Styles for Focus section
+    .container1 {
+      margin: auto auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .interestCard {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .cardBody {
+          margin: 20px;
+          p {
+            width: 15vw;
+            color: $text;
+          }
+        }
+      }
+    }
+    .container2 {
+      display: flex;
+      justify-content: space-between;
+      margin: auto auto;
+      padding: 40px;
+      width: 80%;
+
+      // styles for Profile section
+      .bio {
+        background-color: $primary;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 30vw;
+        height: 65vh;
+
+        p {
+          border: 1px solid $primary;
+          position: relative;
+          left: 12vw;
+          border-radius: 20px;
+          padding: 20px;
+          background-color: $secondary;
+          color: $text;
+        }
+      }
+
+      // styles for the Skills bar
+      .skills {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding: 20px;
+        color: $text;
+        .bar {
+          text-align: end;
+          width: 100%;
+          background-color: $text;
+          border-radius: 15px;
+
+          .percentage {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: $text;
+          }
+
+          .html {
+            width: 90%;
+            animation: fade-bar 1s ease;
+          }
+          .css {
+            width: 90%;
+            animation: fade-bar 1s ease-in;
+          }
+          .js {
+            width: 85%;
+            animation: fade-bar 1s ease-in-out;
+          }
+          .react {
+            width: 85%;
+            animation: fade-bar 1s ease-out;
+          }
+          .next {
+            width: 80%;
+            animation: fade-bar 1s ease-in-out;
+          }
+          .express {
+            width: 85%;
+            animation: fade-bar 1s ease;
+          }
+          .postgres {
+            width: 80%;
+            animation: fade-bar 1s ease-out;
+          }
+        }
+        .bar > div {
+          background-color: $primary;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+@keyframes fade-bar {
+  0% {
+    width: 0;
+  }
+  100% {
+  }
+}

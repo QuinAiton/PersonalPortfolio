@@ -1,3 +1,7 @@
+$text: #fff;
+$primary: #adefd1ff;
+$secondary: #192633;
+
 .container {
   width: 90%;
   margin: auto auto;
@@ -8,7 +12,7 @@
     padding-top: 20px;
     margin: 0;
     li {
-      color: white;
+      color: $primary;
       margin: 0px 15px;
       list-style: none;
       -webkit-transition: color 5s ease;
@@ -29,19 +33,12 @@
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    background-color: white;
+    background-color: $primary;
     transition: font-size 200ms ease-in-out;
   }
 
   .links a:hover {
-    background-image: linear-gradient(
-      to right,
-      #8400ff,
-      #e400c1,
-      #ff0080,
-      #ff0047,
-      #ff3d07
-    );
+    background-color: $text;
     font-size: 1.6em;
     transition: all 600ms cubic-bezier(0, 0.94, 0.8, 1);
     background-position: 0%;
@@ -59,13 +56,7 @@
     }
 
     a:hover {
-      background-image: linear-gradient(
-        to right,
-        #8400ff,
-        #e400c1,
-        #ff0080,
-        #ff0047
-      );
+      background-color: $primary;
       color: black;
       transition: all 300ms cubic-bezier(0, 0.94, 0.8, 1);
     }
