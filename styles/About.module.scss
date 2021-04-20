@@ -1,14 +1,6 @@
-$gradient: linear-gradient(
-  to left,
-  #a348f8,
-  #ff00ba,
-  #ff2f76,
-  #ff783b,
-  #ffb100
-);
 $text: #fff;
 $primary: #adefd1ff;
-$secondary: #101820ff;
+$secondary: #192633;
 
 .container {
   width: 100vw;
@@ -28,72 +20,97 @@ $secondary: #101820ff;
     }
   }
   .content {
-    height: 100%;
-    display: grid;
-    margin: auto auto;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    margin: none;
 
-    .interests {
+    // Styles for Focus section
+    .container1 {
       margin: auto auto;
       width: 100%;
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
+      margin-bottom: 20px;
 
       .interestCard {
+        margin-left: 20px;
         display: flex;
         align-items: center;
-        p {
-          width: 15vw;
-        }
+        justify-content: flex-start;
 
-        .hex {
-          margin: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100px;
-          height: 57.735px;
-          background: $secondary;
-          position: relative;
-        }
-        .hex::before {
-          content: '';
-          position: absolute;
-          top: -28.8675px;
-          left: 0;
-          width: 0;
-          height: 0;
-          border-left: 50px solid transparent;
-          border-right: 50px solid transparent;
-          border-bottom: 28.8675px solid $secondary;
-        }
-        .hex::after {
-          content: '';
-          position: absolute;
-          bottom: -28.8675px;
-          left: 0;
-          width: 0;
-          height: 0;
-          border-left: 50px solid transparent;
-          border-right: 50px solid transparent;
-          border-top: 28.8675px solid $secondary;
-          background: $gradient;
+        .cardBody {
+          margin: 20px;
+          p {
+            width: 15vw;
+            color: $text;
+          }
         }
       }
     }
-    .bio {
+    .container2 {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
+      margin: 40px;
 
-      img {
-        border-radius: 50%;
-      }
-      p {
+      // styles for Profile section
+      .bio {
         background-color: $primary;
-        color: #000;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 30vw;
+        height: 65vh;
+
+        p {
+          border: 1px solid $primary;
+          position: relative;
+          left: 12vw;
+          border-radius: 20px;
+          padding: 20px;
+          background-color: $secondary;
+          color: $text;
+        }
+      }
+
+      // styles for the Skills bar
+      .skills {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding: 20px;
+        margin: 0 auto;
+
+        .bar {
+          text-align: end;
+          width: 100%;
+          background-color: $text;
+
+          .percentage {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: $text;
+          }
+
+          .html {
+            width: 90%;
+          }
+          .css {
+            width: 80%;
+          }
+          .js {
+            width: 65%;
+          }
+          .php {
+            width: 60%;
+          }
+        }
+        .bar > div {
+          background-color: $primary;
+          color: $secondary;
+        }
       }
     }
   }

@@ -1,7 +1,7 @@
 import Main from '../styles/Home.module.scss';
 import Nav from '../components/Nav';
 import Header from '../components/Header';
-import About from '../components/about/About';
+import About from '../components/About';
 const Index = () => {
   return (
     <div className={Main.container}>
