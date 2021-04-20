@@ -50,7 +50,9 @@ $secondary: #192633;
     .container2 {
       display: flex;
       justify-content: space-between;
-      margin: 40px;
+      margin: auto auto;
+      padding: 40px;
+      width: 80%;
 
       // styles for Profile section
       .bio {
@@ -81,12 +83,12 @@ $secondary: #192633;
         flex-direction: column;
         width: 30%;
         padding: 20px;
-        margin: 0 auto;
-
+        color: $text;
         .bar {
           text-align: end;
           width: 100%;
           background-color: $text;
+          border-radius: 15px;
 
           .percentage {
             padding-top: 10px;
@@ -96,15 +98,31 @@ $secondary: #192633;
 
           .html {
             width: 90%;
+            animation: fade-bar 1s ease;
           }
           .css {
-            width: 80%;
+            width: 90%;
+            animation: fade-bar 1s ease-in;
           }
           .js {
-            width: 65%;
+            width: 85%;
+            animation: fade-bar 1s ease-in-out;
           }
-          .php {
-            width: 60%;
+          .react {
+            width: 85%;
+            animation: fade-bar 1s ease-out;
+          }
+          .next {
+            width: 80%;
+            animation: fade-bar 1s ease-in-out;
+          }
+          .express {
+            width: 85%;
+            animation: fade-bar 1s ease;
+          }
+          .postgres {
+            width: 85%;
+            animation: fade-bar 1s ease-out;
           }
         }
         .bar > div {
@@ -113,5 +131,12 @@ $secondary: #192633;
         }
       }
     }
+  }
+}
+@keyframes fade-bar {
+  0% {
+    width: 0;
+  }
+  100% {
   }
 }

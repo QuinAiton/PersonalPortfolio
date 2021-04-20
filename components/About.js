@@ -15,8 +15,8 @@ const About = () => {
       </div>
 
       <div className={Styles.content}>
-        <div className={Styles.container1}>
-          <Bounce left cascade>
+        <Bounce left cascade>
+          <div className={Styles.container1}>
             <div className={Styles.interestCard}>
               <Image
                 src='/fast.png'
@@ -25,7 +25,7 @@ const About = () => {
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h3>Fast Sites</h3>
+                <h3>Speed</h3>
                 <p>body</p>
               </div>
             </div>
@@ -49,7 +49,7 @@ const About = () => {
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h3>responsive Websites</h3>
+                <h3>Responsive Websites</h3>
                 <p>body</p>
               </div>
             </div>
@@ -65,8 +65,8 @@ const About = () => {
                 <p>body</p>
               </div>
             </div>
-          </Bounce>
-        </div>
+          </div>
+        </Bounce>
         <div className={Styles.container2}>
           <div className={Styles.bio}>
             <Rotate top>
@@ -93,25 +93,66 @@ const About = () => {
             </Bounce>
           </div>
           <div className={Styles.skills}>
-            <p>HTML</p>
-            <div className={Styles.bar}>
-              <div className={`${Styles.percentage}, ${Styles.html}`}>90%</div>
-            </div>
-
-            <p>CSS</p>
-            <div className={Styles.bar}>
-              <div className={`${Styles.percentage}, ${Styles.css}`}>80%</div>
-            </div>
-
-            <p>JavaScript</p>
-            <div className={Styles.bar}>
-              <div className={`${Styles.percentage}, ${Styles.js}`}>65%</div>
-            </div>
-
-            <p>PHP</p>
-            <div className={Styles.bar}>
-              <div className={`${Styles.percentage}, ${Styles.php}`}>60%</div>
-            </div>
+            <Bounce right>
+              <p>HTML</p>
+              <div className={Styles.bar}>
+                <div className={`${Styles.percentage}, ${Styles.html}`}>
+                  90%
+                </div>
+              </div>
+            </Bounce>
+            <Bounce right>
+              <p>CSS</p>
+              <div className={Styles.bar}>
+                <div className={`${Styles.percentage}, ${Styles.css}`}>90%</div>
+              </div>
+            </Bounce>
+            <Bounce right>
+              <p>JavaScript</p>
+              <div className={Styles.bar}>
+                <div className={`${Styles.percentage}, ${Styles.js}`}>85%</div>
+              </div>
+            </Bounce>
+            <Bounce right>
+              <p>React js</p>
+              <div className={Styles.bar}>
+                <div className={`${Styles.percentage}, ${Styles.react}`}>
+                  80%
+                </div>
+              </div>
+            </Bounce>
+            <Bounce right>
+              <p>Next js</p>
+              <div className={Styles.bar}>
+                <div className={`${Styles.percentage}, ${Styles.next}`}>
+                  85%
+                </div>
+              </div>
+            </Bounce>
+            <Bounce right>
+              <p>Express</p>
+              <div className={Styles.bar}>
+                <div className={`${Styles.percentage}, ${Styles.express}`}>
+                  85%
+                </div>
+              </div>
+            </Bounce>
+            <Bounce right>
+              <p>Mongo DB</p>
+              <div className={Styles.bar}>
+                <div className={`${Styles.percentage}, ${Styles.express}`}>
+                  85%
+                </div>
+              </div>
+            </Bounce>
+            <Bounce right>
+              <p>PostGreSQL</p>
+              <div className={Styles.bar}>
+                <div className={`${Styles.percentage}, ${Styles.postgres}`}>
+                  85%
+                </div>
+              </div>
+            </Bounce>
           </div>
         </div>
       </div>
