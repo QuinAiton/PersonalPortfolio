@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Styles from '../styles/Header.module.scss';
 import Fade from 'react-reveal/Fade';
+
 const Header = () => {
   return (
     <div className={Styles.container}>
@@ -13,7 +14,7 @@ const Header = () => {
           I specialize in creating exceptional digital experiences for the web.
         </p>
       </div>
-      <Fade>
+      <Fade bottom>
         <div className={Styles.explore}>
           <p> Explore </p>
           <div className={Styles.arrow} />

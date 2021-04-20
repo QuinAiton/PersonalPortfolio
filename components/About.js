@@ -1,7 +1,10 @@
 import React from 'react';
 import Styles from '../styles/About.module.scss';
-import { Bounce, Fade, Rotate } from 'react-reveal';
+import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
+import Rotate from 'react-reveal/Rotate';
 import Image from 'next/image';
+import { IoSpeedometerOutline } from 'react-icons/io';
 const About = () => {
   return (
     <div className={Styles.container}>
@@ -20,19 +23,19 @@ const About = () => {
             <div className={Styles.interestCard}>
               <Image
                 src='/fast.png'
-                alt='focus cards'
+                alt='speed card'
                 height={100}
                 width={100}
               />
               <div className={Styles.cardBody}>
                 <h3>Speed</h3>
-                <p>body</p>
+                <p></p>
               </div>
             </div>
             <div className={Styles.interestCard}>
               <Image
                 src='/intuitive.png'
-                alt='focus cards'
+                alt='intuitive card'
                 height={100}
                 width={100}
               />
@@ -44,7 +47,7 @@ const About = () => {
             <div className={Styles.interestCard}>
               <Image
                 src='/responsive.png'
-                alt='focus cards'
+                alt='responsive card'
                 height={100}
                 width={100}
               />
@@ -56,7 +59,7 @@ const About = () => {
             <div className={Styles.interestCard}>
               <Image
                 src='/dynamic.png'
-                alt='focus cards'
+                alt='dynamic card'
                 height={100}
                 width={100}
               />
@@ -117,7 +120,7 @@ const About = () => {
               <p>React js</p>
               <div className={Styles.bar}>
                 <div className={`${Styles.percentage}, ${Styles.react}`}>
-                  80%
+                  85%
                 </div>
               </div>
             </Bounce>
@@ -125,7 +128,7 @@ const About = () => {
               <p>Next js</p>
               <div className={Styles.bar}>
                 <div className={`${Styles.percentage}, ${Styles.next}`}>
-                  85%
+                  80%
                 </div>
               </div>
             </Bounce>
@@ -149,7 +152,7 @@ const About = () => {
               <p>PostGreSQL</p>
               <div className={Styles.bar}>
                 <div className={`${Styles.percentage}, ${Styles.postgres}`}>
-                  85%
+                  80%
                 </div>
               </div>
             </Bounce>
