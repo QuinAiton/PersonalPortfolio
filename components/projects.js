@@ -16,34 +16,53 @@ const projects = () => {
 
       <div className={Styles.projects}>
         <div className={Styles.card}>
-          <div className={Styles.outer}>
-            <div className={Styles.inner}>
+          <div className={Styles.item}>
+            <div className={Styles.image}>
               <Image
                 src='/familyMatters.png'
-                alt='Pinnet'
-                height={600}
-                width={800}
+                alt='familiy matters'
+                layout='fill'
               />
             </div>
-          </div>
-          <div className={Styles.description}>
-            <div>
-              <h2>Family Matterz</h2>
-              <p>
-                Built on a 2 week deadline, this web application was designed
-                with the needs of groups and families to stay connected in a
-                safe, familiar and convenient environment. Built as a mobile web
-                app, Family Matterz takes the guesswork out of organizing and
-                saves time for the things that matter most, family.
-              </p>
+            <div className={Styles.text}>
+              <p>Family Matterz</p>
+              <button>Show More</button>
             </div>
-            <div>
-              <ul className={Styles.tech}>
-                <li>React</li>
-                <li>Express</li>
-                <li>Mongo DB</li>
-                <li>Socket IO</li>
-              </ul>
+          </div>
+        </div>
+
+        <div className={Styles.card}>
+          <div className={`${Styles.item} ${Styles.w2}`}>
+            <div className={Styles.image}>
+              <Image src='/my-pins.png' alt='Pinnet' layout='fill' />
+            </div>
+            <div className={Styles.text}>
+              <p>Pinnet</p>
+              <button>Show More</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={Styles.card}>
+          <div className={Styles.item}>
+            <div className={Styles.image}>
+              <Image src='/SurfShareHome.png' alt='SurfShare' layout='fill' />
+            </div>
+            <div className={Styles.text}>
+              <p>Surf Swap</p>
+              <button>Show More</button>
+            </div>
+          </div>
+        </div>
+
+        <div className={Styles.card}>
+          <div className={Styles.item}>
+            <div className={Styles.image}>
+              <Image src='/Interview-Home.png' alt='SurfShare' layout='fill' />
+            </div>
+            <div className={Styles.text}>
+              <p>Interview Schedular</p>
+              <button>Show More</button>
             </div>
           </div>
         </div>

@@ -3,8 +3,8 @@ $primary: #adefd1ff;
 $secondary: #192633;
 
 .container {
-  width: 100vw;
-  height: 10vh;
+  max-width: 100vw;
+  max-height: 10vh;
   padding: 0 20px;
   margin: auto auto;
   .items {

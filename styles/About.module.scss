@@ -3,8 +3,8 @@ $primary: #adefd1ff;
 $secondary: #192633;
 
 .container {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  max-width: 100vw;
   padding-top: 20px;
   color: $primary;
   background-color: $secondary;
@@ -137,5 +137,24 @@ $secondary: #192633;
     width: 0;
   }
   100% {
+  }
+}
+
+// small screen styles
+
+@media (max-width: 600px) {
+  .container {
+    .content {
+      .container2 {
+        padding: none;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        .bio {
+          height: 40%;
+        }
+      }
+    }
   }
 }

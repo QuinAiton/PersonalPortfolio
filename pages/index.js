@@ -23,7 +23,7 @@ const Home = () => {
       <Nav className={Main.nav} />
       <Header className={Main.header} />
       <About className={Main.about} />
-      <Projects />
+      <Projects className={Main.projects} />
     </div>
   );
 };
