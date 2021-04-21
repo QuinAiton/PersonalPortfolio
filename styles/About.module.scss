@@ -64,7 +64,6 @@ $secondary: #192633;
         align-items: center;
         border-radius: 10px;
         width: 30vw;
-        height: 65vh;
 
         p {
           border: 1px solid $primary;
@@ -81,7 +80,7 @@ $secondary: #192633;
       .skills {
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 30vw;
         padding: 20px;
         color: $text;
         .bar {

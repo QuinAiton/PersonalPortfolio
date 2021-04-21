@@ -27,15 +27,24 @@ const projects = () => {
             </div>
           </div>
           <div className={Styles.description}>
-            <h2>Family Matterz</h2>
-            <p>
-              Built on a 2 week deadline, this web application was designed with
-              the needs of groups and families to stay connected in a safe,
-              familiar and convenient environment. Built as a mobile web app,
-              Family Matterz takes the guesswork out of organizing and saves
-              time for the things that matter most, family.
-            </p>
-            <p>React, express, MongoDb Socket io</p>
+            <div>
+              <h2>Family Matterz</h2>
+              <p>
+                Built on a 2 week deadline, this web application was designed
+                with the needs of groups and families to stay connected in a
+                safe, familiar and convenient environment. Built as a mobile web
+                app, Family Matterz takes the guesswork out of organizing and
+                saves time for the things that matter most, family.
+              </p>
+            </div>
+            <div>
+              <ul className={Styles.tech}>
+                <li>React</li>
+                <li>Express</li>
+                <li>Mongo DB</li>
+                <li>Socket IO</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

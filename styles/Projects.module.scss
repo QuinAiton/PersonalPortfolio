@@ -19,18 +19,20 @@ $dark: #131e29;
     }
   }
   .projects {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     padding: 40px;
 
     .card {
       display: flex;
-      width: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      width: 90%;
+
       .outer {
         background-color: $primary;
-        height: 520px;
+        height: 55vh;
         .inner:nth-child(odd) {
           display: flex;
           align-items: center;
@@ -43,8 +45,6 @@ $dark: #131e29;
         }
         .inner :nth-child(even) {
           display: flex;
-          align-items: center;
-          justify-content: center;
           position: relative;
           background-color: $secondary;
           border: 1px solid $primary;
@@ -53,14 +53,34 @@ $dark: #131e29;
         }
       }
       .description {
+        background-color: $secondary;
+        display: flex;
+        margin-left: 100px;
+        padding: 30px;
+        font-size: 1.5em;
+        width: 60%;
+        border-radius: 15px;
+
         h2 {
+          text-align: center;
           color: $primary;
         }
-        font-size: 2em;
-        margin-left: 100px;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
+
+        p {
+          width: 85%;
+        }
+        .tech {
+          font-size: 1em;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          color: $primary;
+        }
+
+        .tech > * {
+          margin-top: 60%;
+        }
       }
     }
   }

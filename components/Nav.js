@@ -6,9 +6,9 @@ import Fade from 'react-reveal/Fade';
 import Image from 'next/image';
 const Nav = () => {
   return (
-    <div className={NavStyles.container}>
-      <Fade top>
-        <ul className={NavStyles.items}>
+    <Fade top>
+      <div className={NavStyles.container}>
+        <div className={NavStyles.items}>
           <Image
             className={NavStyles.image}
             src='/logo.png'
@@ -16,7 +16,7 @@ const Nav = () => {
             height={130}
             width={130}
           />
-          <div className={NavStyles.links}>
+          <ul className={NavStyles.links}>
             <li>
               <a>About</a>
             </li>
@@ -26,8 +26,8 @@ const Nav = () => {
             <li>
               <a>Projects</a>
             </li>
-          </div>
-          <div className={NavStyles.contact}>
+          </ul>
+          <ul className={NavStyles.contact}>
             <li>
               <a>
                 <VscGithub className={NavStyles.icon} />
@@ -43,10 +43,10 @@ const Nav = () => {
                 <FaEnvelope className={NavStyles.icon} />
               </a>
             </li>
-          </div>
-        </ul>
-      </Fade>
-    </div>
+          </ul>
+        </div>
+      </div>
+    </Fade>
   );
 };
 
