@@ -7,7 +7,7 @@ import Projects from '../components/projects';
 const Home = () => {
   return (
     <div className={Main.container}>
-      <Head>
+      <Head id='head'>
         <title>Quinten Aiton's Web Development Portfolio</title>
         <meta
           name='keywords'
