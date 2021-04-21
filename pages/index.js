@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Nav from '../components/Nav';
 import Header from '../components/Header';
 import About from '../components/About';
+import Projects from '../components/projects';
 const Home = () => {
   return (
     <div className={Main.container}>
@@ -22,6 +23,7 @@ const Home = () => {
       <Nav className={Main.nav} />
       <Header className={Main.header} />
       <About className={Main.about} />
+      <Projects />
     </div>
   );
 };

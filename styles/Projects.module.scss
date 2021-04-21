@@ -1,0 +1,67 @@
+$text: #fff;
+$primary: #adefd1ff;
+$secondary: #192633;
+$dark: #131e29;
+
+.container {
+  height: 100vh;
+  background-color: $dark;
+
+  .title {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .underline {
+      width: 150px;
+      border: 1px solid $text;
+    }
+  }
+  .projects {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 40px;
+
+    .card {
+      display: flex;
+      width: 100%;
+      .outer {
+        background-color: $primary;
+        height: 520px;
+        .inner:nth-child(odd) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          background-color: $secondary;
+          border: 1px solid $primary;
+          left: 5%;
+          top: 7%;
+        }
+        .inner :nth-child(even) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          background-color: $secondary;
+          border: 1px solid $primary;
+          right: 5%;
+          top: 7%;
+        }
+      }
+      .description {
+        h2 {
+          color: $primary;
+        }
+        font-size: 2em;
+        margin-left: 100px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,8 +1,10 @@
 $text: #fff;
 $primary: #adefd1ff;
 $secondary: #192633;
+$dark: #131e29;
 
 .container {
+  background-color: $dark;
   min-height: 100vh;
   display: flex;
   justify-content: center;
