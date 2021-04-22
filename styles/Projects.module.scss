@@ -7,76 +7,78 @@ $dark: #131e29;
   background-color: $dark;
   min-height: 100vh;
   max-width: 100vw;
+}
 
-  .title {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.title {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .underline {
+    width: 150px;
+    border: 1px solid $text;
+  }
+}
+
+.projects {
+  width: 70%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  grid-gap: 20px;
+}
+
+.item {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 500ms ease-in-out;
+    }
+  }
+  .text {
     text-align: center;
-    .underline {
-      width: 150px;
-      border: 1px solid $text;
-    }
+    color: $dark;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    transition: 300ms ease-in-out;
+    -webkit-backdrop-filter: blur(object-fit) saturate(1.8);
+    backdrop-filter: blur(100%) saturate(1.8);
   }
+}
 
-  .projects {
-    width: 70%;
-    margin: 100px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    grid-gap: 20px;
+.item:hover .image img {
+  transform: scale(1.3);
+}
+.item:hover .text {
+  opacity: 1;
+  animation: move-down 300ms linear;
+  padding: 1em;
+}
 
-    .card {
-      .item {
-        border-radius: 10px;
-        width: 100%;
-        height: 100%;
-        position: relative;
-
-        .image {
-          width: 100%;
-          height: 100%;
-          // overflow: hidden;
-
-          img {
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 500ms ease-in-out;
-          }
-        }
-        .text {
-          text-align: center;
-          color: $dark;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          z-index: 4;
-          transition: 300ms ease-in-out;
-          -webkit-backdrop-filter: blur(object-fit) saturate(1.8);
-          backdrop-filter: blur(100%) saturate(1.8);
-        }
-      }
-      .item:hover .image img {
-        transform: scale(1.3);
-      }
-      .item:hover .text {
-        opacity: 1;
-        animation: move-down 300ms linear;
-        padding: 1em;
-      }
-
-      .text button {
-        background: $dark;
-        padding: 10px;
-        border-radius: 10px;
-        color: $primary;
-      }
-    }
-  }
+.text button {
+  padding: 16px 32px;
+  border-radius: 10px;
+  border: none;
+  background: $dark;
+  color: $primary;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 // small screen styles

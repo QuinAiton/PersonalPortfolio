@@ -1,33 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Styles from '../styles/Projects.module.scss';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
-import Modal from 'react-modal';
-
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    backgroundColor: ' #131e29',
-    width: '80%',
-    height: '80%',
-  },
-};
-
+import Modal from './Modal';
 const projects = () => {
-  const [isOpen, setOpen] = useState({
+  const [modalShow, setModalShow] = useState({
     familyMatterz: false,
     pinnet: false,
     surfSwap: false,
+    interview: false,
   });
 
-  useEffect(() => {
-    Modal.setAppElement('body');
-  }, []);
+  // const closeModal = (name) => {
+  //   setModalShow({ ...modalShow, name: false });
+  // };
 
   return (
     <div className={Styles.container}>
@@ -53,24 +39,23 @@ const projects = () => {
             <div className={Styles.text}>
               <p>Family Matterz</p>
               <button
-                onClick={() => setOpen({ ...isOpen, familyMatterz: true })}
+                onClick={() =>
+                  setModalShow({ ...modalShow, familyMatterz: true })
+                }
               >
                 Show More
               </button>
             </div>
           </div>
           <Modal
-            isOpen={isOpen.familyMatterz}
-            onRequestClose={() => setOpen({ ...isOpen, familyMatterz: false })}
-            style={customStyles}
-          >
-            <button
-              onClick={() => setOpen({ ...isOpen, familyMatterz: false })}
-            >
-              +
-            </button>
-            <p>Family Matterz</p>
-          </Modal>
+            title='Family Matterz'
+            description='Built on a 2 week deadline, this web application was designed with the needs of groups and families to stay connected in a safe, familiar and convenient environment. Built as a mobile web app on a stack of React, NodeJs, and MongoDb, Family Matterz takes the guesswork out of organizing and saves time for the things that matter most, family.'
+            stack={['MongoDB', 'Express', 'React', 'Node']}
+            modalShow={modalShow.familyMatterz}
+            modalClose={() =>
+              setModalShow({ ...modalShow, familyMatterz: false })
+            }
+          />
         </div>
 
         <div className={Styles.card}>
@@ -80,21 +65,9 @@ const projects = () => {
             </div>
             <div className={Styles.text}>
               <p>Pinnet</p>
-              <button onClick={() => setOpen({ ...isOpen, pinnet: true })}>
-                Show More
-              </button>
+              <button>Show More</button>
             </div>
           </div>
-          <Modal
-            isOpen={isOpen.pinnet}
-            onRequestClose={() => setOpen({ ...isOpen, pinnet: false })}
-            style={customStyles}
-          >
-            <button onClick={() => setOpen({ ...isOpen, pinnet: false })}>
-              +
-            </button>
-            <p>Pinnet</p>
-          </Modal>
         </div>
 
         <div className={Styles.card}>
