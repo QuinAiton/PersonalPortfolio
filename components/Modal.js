@@ -2,36 +2,61 @@ import React from 'react';
 import Image from 'next/image';
 import Styles from '../styles/Modal.module.scss';
 import { MdClose } from 'react-icons/md';
+import Fade from 'react-reveal/Fade';
+import { Carousel } from 'react-responsive-carousel';
+import image from 'next/image';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const Modal = ({ modalClose, modalShow, title, description, stack }) => {
-  const stackItem = stack.map((item) => {
-    return <li className={Styles.stack}>{item}</li>;
+const Modal = ({
+  modalClose,
+  modalShow,
+  title,
+  description,
+  stack,
+  images,
+}) => {
+  const stackItem = stack.map((item, index) => {
+    return (
+      <li key={index} className={Styles.stack}>
+        {item}
+      </li>
+    );
+  });
+
+  const imageItems = images.map((item, index) => {
+    return (
+      <div key={index}>
+        <img src={item} alt='FamilyMatters Modal' height='auto' width='800px' />
+      </div>
+    );
   });
 
   return (
     <>
       {modalShow ? (
-        <div className={Styles.background}>
-          <div className={Styles.modalWrapper}>
-            <div className={Styles.modalImg}>
-              <Image
-                src='/familyMatters.png'
-                alt='FamilyMatters Modal'
-                height={700}
-                width={800}
-                // layout='fill'
-              />
-            </div>
-            <div className={Styles.modalContent}>
-              <h2>{title}</h2>
-              <p>{description}</p>
-              <ul>{stackItem}</ul>
-            </div>
-            <div className={Styles.closeModalButton} aria-label='Close Modal'>
-              <MdClose onClick={modalClose} />
-            </div>
+        <Fade>
+          <div className={Styles.background}>
+            <Fade top>
+              <div className={Styles.modalWrapper}>
+                <Carousel className={Styles.modalImg}>{imageItems}</Carousel>
+                <div className={Styles.modalContent}>
+                  <h2>{title}</h2>
+                  <p>{description}</p>
+                  <div>
+                    <h4>Tech Stack</h4>
+                    <ul>{stackItem}</ul>
+                  </div>
+                </div>
+                <div
+                  className={Styles.closeModalButton}
+                  aria-label='Close Modal'
+                >
+                  <MdClose onClick={modalClose} />
+                </div>
+              </div>
+            </Fade>
           </div>
-        </div>
+        </Fade>
       ) : null}
     </>
   );

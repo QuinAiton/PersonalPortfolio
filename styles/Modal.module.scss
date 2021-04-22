@@ -18,13 +18,12 @@ $dark: #131e29;
 }
 
 .modalWrapper {
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
   box-shadow: 0 5px 16px rgb(0, 0, 0);
   background-color: $text;
-  color: $text;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   position: relative;
   z-index: 10;
   border-radius: 20px;
@@ -37,11 +36,11 @@ $dark: #131e29;
   background-color: $dark;
   position: relative;
   display: flex;
+  padding: 15px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  img {
-    border-radius: 20px;
-  }
+  overflow-y: hidden;
 }
 
 .modalContent {
@@ -65,8 +64,10 @@ $dark: #131e29;
 }
 
 .closeModalButton {
+  color: $dark;
   cursor: pointer;
   position: absolute;
+  font-size: 1.5em;
   top: 20px;
   right: 20px;
   width: 32px;
