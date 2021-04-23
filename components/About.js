@@ -40,7 +40,7 @@ const About = () => {
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h3>Intuitive Design</h3>
+                <h3>Intuitive</h3>
                 <p>body</p>
               </div>
             </div>
@@ -52,7 +52,7 @@ const About = () => {
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h3>Responsive Websites</h3>
+                <h3>Responsive</h3>
                 <p>body</p>
               </div>
             </div>
@@ -64,7 +64,7 @@ const About = () => {
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h3>Dynamic Content</h3>
+                <h3>Dynamic</h3>
                 <p>body</p>
               </div>
             </div>

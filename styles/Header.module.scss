@@ -162,3 +162,9 @@ $dark: #131e29;
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 896px) {
+  .typing {
+    font-size: 0.7rem;
+  }
+}
