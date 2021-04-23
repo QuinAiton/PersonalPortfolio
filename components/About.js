@@ -4,7 +4,7 @@ import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
 import Rotate from 'react-reveal/Rotate';
 import Image from 'next/image';
-import { IoSpeedometerOutline } from 'react-icons/io';
+
 const About = () => {
   return (
     <div className={Styles.container}>

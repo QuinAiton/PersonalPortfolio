@@ -3,75 +3,80 @@ $primary: #adefd1ff;
 $secondary: #192633;
 
 .container {
-  width: 90%;
-  margin: auto auto;
-  .items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    margin: 0;
-    li {
-      color: $primary;
-      margin: 0px 15px;
-      list-style: none;
-      -webkit-transition: color 5s ease;
-      transition: background-image 5s ease;
-    }
+  max-width: 100vw;
+  max-height: 10vh;
+  padding: 0 20px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  li {
+    color: $primary;
+    margin: 0px 15px;
+    list-style: none;
+    -webkit-transition: color 5s ease;
+    transition: background-image 5s ease;
   }
-  .items > div {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+}
+
+.items > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links a {
+  font-size: 1.5em;
+  margin: 5px;
+  text-decoration: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  background-color: $primary;
+  transition: font-size 200ms ease-in-out;
+}
+
+.links a:hover {
+  background-color: $text;
+  font-size: 1.6em;
+  transition: all 600ms cubic-bezier(0, 0.94, 0.8, 1);
+  background-position: 0%;
+}
+
+.contact {
+  margin: 0px 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  a {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0em 0.2em;
   }
 
-  .links a {
-    font-size: 1.5em;
-    margin: 5px;
-    text-decoration: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
+  a:hover {
     background-color: $primary;
-    transition: font-size 200ms ease-in-out;
+    color: black;
+    transition: all 300ms cubic-bezier(0, 0.94, 0.8, 1);
   }
+}
 
-  .links a:hover {
-    background-color: $text;
-    font-size: 1.6em;
-    transition: all 600ms cubic-bezier(0, 0.94, 0.8, 1);
-    background-position: 0%;
-  }
+.icon {
+  font-size: 2em;
+  padding-top: 0.1em;
+  padding-left: 0.04em;
+}
 
-  .contact {
-    margin: 0px 5px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.image {
+  transition: transform 500ms ease;
+}
 
-    a {
-      display: inline-block;
-      border-radius: 50%;
-      padding: 0em 0.2em;
-    }
-
-    a:hover {
-      background-color: $primary;
-      color: black;
-      transition: all 300ms cubic-bezier(0, 0.94, 0.8, 1);
-    }
-  }
-  .icon {
-    font-size: 2em;
-    padding-top: 0.1em;
-    padding-left: 0.04em;
-  }
-
-  .image {
-    transition: transform 500ms ease;
-  }
-
-  .image:hover {
-    transform: rotate(-45deg);
-  }
+.image:hover {
+  transform: rotate(-45deg);
 }
