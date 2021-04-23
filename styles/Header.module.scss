@@ -24,6 +24,7 @@ $dark: #131e29;
   font-size: 2em;
   span {
     color: $primary;
+    font-size: 1.5em;
   }
   span:hover {
     transition: all 600ms cubic-bezier(0, 0.94, 0.8, 1);
@@ -38,30 +39,42 @@ $dark: #131e29;
   }
 
   p:nth-child(1) {
-    width: 50%;
+    width: 30%;
+    margin: 0;
+    font-size: 1.3em;
     -webkit-animation: type 1s steps(40, end);
     animation: type 1s steps(40, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
-
   p:nth-child(2) {
-    width: 75%;
+    width: 50%;
     opacity: 0;
     -webkit-animation: type 1.5s steps(40, end);
     animation: type 1.5s steps(40, end);
-    -webkit-animation-delay: 2s;
-    animation-delay: 1.5s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
 
   p:nth-child(3) {
+    width: 80%;
     opacity: 0;
-    -webkit-animation: type 1.5s steps(40, end);
-    animation: type 1.5s steps(40, end);
-    -webkit-animation-delay: 3s;
-    animation-delay: 3.5s;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  p:nth-child(4) {
+    opacity: 0;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-delay: 4.5s;
+    animation-delay: 4.5s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }

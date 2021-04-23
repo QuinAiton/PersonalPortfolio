@@ -6,8 +6,9 @@ const Header = () => {
   return (
     <div className={Styles.container}>
       <div className={Styles.typing}>
+        <p>Hello world!</p>
         <p>
-          Hi, My Name is <span>Quinten Aiton.</span>
+          My Name is <span>Quinten Aiton.</span>
         </p>
         <p>I am a Full-Stack Developer from Victoria, BC.</p>
         <p>
