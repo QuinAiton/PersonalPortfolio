@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Styles from '../styles/Projects.module.scss';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
-import Roll from 'react-reveal/Roll';
 import Modal from './Modal';
 const projects = () => {
   const [modalShow, setModalShow] = useState({
