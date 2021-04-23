@@ -31,8 +31,8 @@ $secondary: #192633;
 .container1 {
   margin: auto auto;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin-bottom: 20px;
 }
 
@@ -145,14 +145,54 @@ $secondary: #192633;
 
 // small screen styles
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .title {
+    font-size: 1em;
+    margin-bottom: 50px;
+  }
+  .container1 {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+
+    .interestCard {
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .cardBody {
+      margin: 0;
+      h3 {
+        margin: 0;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
   .container2 {
-    padding: none;
-    width: 80%;
+    margin: auto;
+    padding: 0 40px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
   .bio {
-    height: 40%;
+    margin: auto auto;
+    font-size: 12px;
+    width: 100%;
+    padding: 0;
+
+    p {
+      font-size: 12px;
+      left: 0;
+      padding: 10px;
+    }
+  }
+
+  .skills {
+    width: 100%;
   }
 }
