@@ -61,6 +61,16 @@ $dark: #131e29;
     color: $dark;
     border: none;
   }
+  h4 {
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      padding: 10px;
+    }
+  }
 }
 
 .closeModalButton {
@@ -74,4 +84,53 @@ $dark: #131e29;
   height: 32px;
   padding: 0;
   z-index: 10;
+}
+
+@media (max-width: 420px) {
+  .modalWrapper {
+    width: 95%;
+    height: 70%;
+    grid-template-columns: 1fr;
+  }
+  .modalImg {
+    background: none;
+    justify-content: flex-start;
+    height: 130%;
+    margin-top: 50px;
+  }
+  .modalContent {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1.2;
+    h2 {
+      font-size: 20px;
+      margin-top: 50px;
+    }
+    p {
+      padding: 0 10px;
+    }
+    h4 {
+      text-align: center;
+      margin: 0;
+      margin-top: 10px;
+    }
+    ul {
+      display: flex;
+      margin: 0;
+
+      li {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .modalImg {
+    margin-top: 30px;
+  }
+  .modalContent {
+    margin-top: 15px;
+  }
 }

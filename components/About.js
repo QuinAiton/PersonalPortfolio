@@ -7,10 +7,10 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div className={Styles.container}>
+    <div id='about' className={Styles.container}>
       <div className={Styles.title}>
         <Fade>
-          <h1>About</h1>
+          <h1>About Me</h1>
         </Fade>
         <Fade Right>
           <div className={Styles.underline}></div>
@@ -28,20 +28,8 @@ const About = () => {
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h3>Speed</h3>
-                <p></p>
-              </div>
-            </div>
-            <div className={Styles.interestCard}>
-              <Image
-                src='/intuitive.png'
-                alt='intuitive card'
-                height={100}
-                width={100}
-              />
-              <div className={Styles.cardBody}>
-                <h3>Intuitive</h3>
-                <p>body</p>
+                <h2>Speed</h2>
+                <p>Fast load times, happy users and better SEO Scores</p>
               </div>
             </div>
             <div className={Styles.interestCard}>
@@ -52,8 +40,23 @@ const About = () => {
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h3>Responsive</h3>
-                <p>body</p>
+                <h2>Responsive</h2>
+                <p>
+                  Web pages created to provide exceptional user experiences
+                  across all devices.
+                </p>
+              </div>
+            </div>
+            <div className={Styles.interestCard}>
+              <Image
+                src='/intuitive.png'
+                alt='intuitive card'
+                height={100}
+                width={100}
+              />
+              <div className={Styles.cardBody}>
+                <h2>Intuitive</h2>
+                <p>Designs that work the way users expect them to.</p>
               </div>
             </div>
             <div className={Styles.interestCard}>
@@ -64,8 +67,11 @@ const About = () => {
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h3>Dynamic</h3>
-                <p>body</p>
+                <h2>Dynamic</h2>
+                <p>
+                  Sites that are database driven giving unique experiences
+                  tailored to each user.
+                </p>
               </div>
             </div>
           </div>
