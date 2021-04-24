@@ -20,10 +20,10 @@ const Home = () => {
         <meta name='author' content='Quinten Aiton' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <Nav className={Main.nav} />
-      <Header className={Main.header} />
-      <About className={Main.about} />
-      <Projects className={Main.projects} />
+      <Nav />
+      <Header id='home' />
+      <About />
+      <Projects />
     </div>
   );
 };

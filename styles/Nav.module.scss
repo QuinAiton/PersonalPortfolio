@@ -1,5 +1,5 @@
 $text: #fff;
-$primary: #adefd1ff;
+$primary: #87f5c3;
 $secondary: #192633;
 
 .container {
@@ -7,11 +7,14 @@ $secondary: #192633;
   max-height: 10vh;
   padding: 0 20px;
   overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   li {
@@ -50,15 +53,19 @@ $secondary: #192633;
 }
 
 .contact {
+  display: flex;
+  color: $primary;
   margin: 0px 5px;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  list-style: none;
 
   a {
     display: inline-block;
     border-radius: 50%;
     padding: 0em 0.2em;
+    margin: 10px;
   }
 
   a:hover {
