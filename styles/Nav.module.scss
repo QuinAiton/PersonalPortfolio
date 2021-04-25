@@ -88,3 +88,26 @@ $secondary: #192633;
 .image:hover {
   transform: rotate(-45deg);
 }
+
+@media (max-width: 420px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    max-height: 30vh;
+
+    .img {
+      justify-self: flex-start;
+      align-self: flex-start;
+    }
+  }
+
+  .items {
+    flex-direction: column;
+    .links {
+      flex-direction: column;
+    }
+  }
+  .contact {
+    flex-direction: column;
+  }
+}
