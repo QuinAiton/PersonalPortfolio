@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
-import NavStyles from '../styles/Nav.module.scss';
+import Styles from '../styles/SmallNav.module.scss';
 import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { VscGithub } from 'react-icons/vsc';
 import Fade from 'react-reveal/Fade';
 import Image from 'next/image';
 import Link from 'next/link';
-import Media from 'react-med';
-const Nav = () => {
+import Media from 'react-media';
+const SmallNav = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <Fade top>
       {isOpen ? (
-        <nav className={NavStyles.container}>
+        <nav className={Styles.container}>
           <Image
-            className={NavStyles.image}
+            className={Styles.image}
             src='/logo.png'
             alt='logo'
             height={130}
             width={130}
           />
-          <div className={NavStyles.items}>
-            <ul className={NavStyles.links}>
+          <div className={Styles.items}>
+            <ul className={Styles.links}>
               <li>
                 <Link href='#about'>
                   <a>About</a>
@@ -31,12 +31,17 @@ const Nav = () => {
                   <a>Projects</a>
                 </Link>
               </li>
+              <div className={Styles.hamburger}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </ul>
           </div>
-          <ul className={NavStyles.contact}>
+          <ul className={Styles.contact}>
             <li>
               <a href='https://github.com/quinaiton' target='_blank'>
-                <VscGithub className={NavStyles.icon} />
+                <VscGithub className={Styles.icon} />
               </a>
             </li>
             <li>
@@ -44,12 +49,12 @@ const Nav = () => {
                 href='https://www.linkedin.com/in/quinten-aiton'
                 target='_blank'
               >
-                <FaLinkedin className={NavStyles.icon} />
+                <FaLinkedin className={Styles.icon} />
               </a>
             </li>
             <li>
               <a href='mailto:quinaiton@pm.me' target='_blank'>
-                <FaEnvelope className={NavStyles.icon} />
+                <FaEnvelope className={Styles.icon} />
               </a>
             </li>
           </ul>
@@ -61,4 +66,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default SmallNav;
