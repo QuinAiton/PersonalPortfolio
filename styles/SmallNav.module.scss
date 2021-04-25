@@ -4,7 +4,7 @@ $secondary: #192633;
 
 .container {
   max-width: 100vw;
-  max-height: 50vh;
+  max-height: 35vh;
   padding: 0 20px;
   overflow-x: hidden;
   display: flex;
@@ -85,20 +85,25 @@ $secondary: #192633;
   padding-left: 0.04em;
 }
 
-.image {
-  transition: transform 500ms ease;
-}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.image:hover {
-  transform: rotate(-45deg);
+  .hamburger {
+    span {
+      display: block;
+      border-bottom: 3px solid $primary;
+      width: 40px;
+      margin: 10px;
+    }
+  }
 }
-
-.hamburger {
-  margin-top: 20px;
+.exit {
   span {
     display: block;
-    margin: 10px;
     border-bottom: 3px solid $primary;
     width: 40px;
+    margin: 10px;
   }
 }

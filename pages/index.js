@@ -26,10 +26,10 @@ const Home = () => {
       <Media query={{ maxWidth: 420 }}>
         <SmallNav />
       </Media>
-      <Media query={{ minWidth: 421 }}>
+      <Media query={{ minWidth: 420 }}>
         <BigNav />
       </Media>
-      <Header id='home' />
+      <Header />
       <About />
       <Projects />
     </div>
