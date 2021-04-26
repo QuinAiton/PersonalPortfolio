@@ -65,7 +65,7 @@ $secondary: #192633;
 }
 // styles for Profile section
 .bio {
-  background-color: $primary;
+  // background-color: $primary;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -73,15 +73,24 @@ $secondary: #192633;
   align-items: center;
   border-radius: 10px;
   width: 30vw;
+  // position: absolute;
+
+  img {
+    border-radius: 20px;
+  }
 
   p {
     border: 1px solid $primary;
     position: relative;
     left: 12vw;
+    bottom: 7vh;
     border-radius: 20px;
     padding: 20px;
     background-color: $secondary;
     color: $text;
+    br {
+      display: block;
+    }
   }
 }
 // styles for the Skills bar
@@ -180,18 +189,26 @@ $secondary: #192633;
   }
   .container2 {
     margin: auto;
-    padding: 0 40px;
+    padding: 0 30px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
   .bio {
+    border-radius: 10px;
+    background-color: #87f5c3;
     margin: auto auto;
     font-size: 12px;
     width: 100%;
     padding: 0;
 
+    img {
+      border-radius: 0;
+      border-radius: 10px 10px 0 0;
+    }
     p {
+      border-radius: 0;
+      border: none;
       font-size: 12px;
       left: 0;
       padding: 10px;
@@ -200,5 +217,8 @@ $secondary: #192633;
 
   .skills {
     width: 100%;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
