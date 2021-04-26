@@ -15,8 +15,7 @@ const SmallNav = () => {
         <Fade top>
           <div className={Styles.container}>
             <div className={Styles.exit} onClick={() => setOpen(false)}>
-              <span></span>
-              <span></span>
+              <span>+</span>
             </div>
             <div className={Styles.items}>
               <ul className={Styles.links}>
@@ -40,7 +39,7 @@ const SmallNav = () => {
               </li>
               <li>
                 <a
-                  href='https://www.linkedin.com/in/quinten-aiton'
+                  href='https://www.linkedin.com/in/quinten-aiton/'
                   target='_blank'
                 >
                   <FaLinkedin className={Styles.icon} />
