@@ -8,13 +8,13 @@ $secondary: #192633;
   padding: 0 20px;
   overflow-x: hidden;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .items {
-  display: flex;
-  justify-content: flex-start;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   margin: 0;
   li {
@@ -28,7 +28,6 @@ $secondary: #192633;
 
 .items > ul {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -53,6 +52,7 @@ $secondary: #192633;
 }
 
 .contact {
+  justify-self: flex-end;
   display: flex;
   color: $primary;
   margin: 0px 5px;
@@ -87,4 +87,27 @@ $secondary: #192633;
 
 .image:hover {
   transform: rotate(-45deg);
+}
+
+@media (max-width: 420px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    max-height: 30vh;
+
+    .img {
+      justify-self: flex-start;
+      align-self: flex-start;
+    }
+  }
+
+  .items {
+    flex-direction: column;
+    .links {
+      flex-direction: column;
+    }
+  }
+  .contact {
+    flex-direction: column;
+  }
 }

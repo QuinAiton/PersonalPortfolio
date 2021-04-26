@@ -1,9 +1,12 @@
 import Main from '../styles/Home.module.scss';
 import Head from 'next/head';
-import Nav from '../components/Nav';
+import BigNav from '../components/BigNav';
+import SmallNav from '../components/SmallNav';
 import Header from '../components/Header';
 import About from '../components/About';
 import Projects from '../components/projects';
+import Media from 'react-media';
+
 const Home = () => {
   return (
     <div className={Main.container}>
@@ -20,8 +23,13 @@ const Home = () => {
         <meta name='author' content='Quinten Aiton' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <Nav />
-      <Header id='home' />
+      <Media query={{ maxWidth: 420 }}>
+        <SmallNav />
+      </Media>
+      <Media query={{ minWidth: 420 }}>
+        <BigNav />
+      </Media>
+      <Header />
       <About />
       <Projects />
     </div>

@@ -33,7 +33,7 @@ const Modal = ({
 
   return (
     <>
-      {modalShow ? (
+      {modalShow && (
         <Fade>
           <div className={Styles.background}>
             <Fade top>
@@ -57,7 +57,7 @@ const Modal = ({
             </Fade>
           </div>
         </Fade>
-      ) : null}
+      )}
     </>
   );
 };

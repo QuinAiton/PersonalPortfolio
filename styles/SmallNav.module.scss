@@ -1,0 +1,113 @@
+$text: #fff;
+$primary: #87f5c3;
+$secondary: #192633;
+
+.container {
+  max-width: 100vw;
+  max-height: 20vh;
+  transition: max-height 0.15 ease-in;
+  padding: 0 20px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  li {
+    color: $primary;
+    margin: 0px 15px;
+    list-style: none;
+    -webkit-transition: color 5s ease;
+    transition: background-image 5s ease;
+  }
+}
+
+.items > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links {
+  a {
+    font-size: 1.5em;
+    margin: 5px;
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    background-color: $primary;
+    transition: font-size 200ms ease-in-out;
+  }
+}
+
+.links a:hover {
+  background-color: $text;
+  font-size: 1.6em;
+  transition: all 600ms cubic-bezier(0, 0.94, 0.8, 1);
+  background-position: 0%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: $primary;
+  margin: 0px 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  list-style: none;
+
+  a {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0em 0.2em;
+    margin: 10px;
+  }
+
+  a:hover {
+    background-color: $primary;
+    color: black;
+    transition: all 300ms cubic-bezier(0, 0.94, 0.8, 1);
+  }
+}
+
+.icon {
+  font-size: 2em;
+  padding-top: 0.1em;
+  padding-left: 0.04em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: max-height 0.25 ease-in;
+
+  .hamburger {
+    span {
+      display: block;
+      border-bottom: 3px solid $primary;
+      width: 40px;
+      margin: 10px;
+    }
+  }
+}
+.exit {
+  span {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    transform: rotate(45deg);
+    font-size: 4em;
+  }
+}

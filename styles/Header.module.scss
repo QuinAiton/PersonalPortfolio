@@ -20,7 +20,6 @@ $dark: #131e29;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
   font-size: 2em;
   span {
     color: $primary;
@@ -71,6 +70,7 @@ $dark: #131e29;
   }
 
   p:nth-child(4) {
+    width: 100%;
     opacity: 0;
     -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(40, end);
@@ -171,5 +171,8 @@ $dark: #131e29;
 @media (max-width: 420px) {
   .typing {
     font-size: 0.7rem;
+  }
+  .explore {
+    bottom: 40px;
   }
 }

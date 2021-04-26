@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Styles from '../styles/Projects.module.scss';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
@@ -12,6 +12,15 @@ const projects = () => {
     interview: false,
     tinyApp: false,
   });
+
+  useEffect(() => {
+    modalShow.familyMatterz ||
+    modalShow.pinnet ||
+    modalShow.surfSwap ||
+    modalShow.tinyApp
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'unset');
+  }, [modalShow]);
 
   return (
     <Roll right top>
