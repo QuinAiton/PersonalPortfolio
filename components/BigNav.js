@@ -9,7 +9,7 @@ const BigNav = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <Fade top>
-      <nav className={Styles.container}>
+      <div className={Styles.container}>
         <Image
           className={Styles.image}
           src='/logo.png'
@@ -30,25 +30,28 @@ const BigNav = () => {
               </Link>
             </li>
           </ul>
+          <ul className={Styles.contact}>
+            <li>
+              <a href='https://github.com/quinaiton' target='_blank'>
+                <VscGithub className={Styles.icon} />
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://www.linkedin.com/in/quinten-aiton'
+                target='_blank'
+              >
+                <FaLinkedin className={Styles.icon} />
+              </a>
+            </li>
+            <li>
+              <a href='mailto:quinaiton@pm.me' target='_blank'>
+                <FaEnvelope className={Styles.icon} />
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul className={Styles.contact}>
-          <li>
-            <a href='https://github.com/quinaiton' target='_blank'>
-              <VscGithub className={Styles.icon} />
-            </a>
-          </li>
-          <li>
-            <a href='https://www.linkedin.com/in/quinten-aiton' target='_blank'>
-              <FaLinkedin className={Styles.icon} />
-            </a>
-          </li>
-          <li>
-            <a href='mailto:quinaiton@pm.me' target='_blank'>
-              <FaEnvelope className={Styles.icon} />
-            </a>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </Fade>
   );
 };
