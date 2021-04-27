@@ -4,7 +4,6 @@ import Styles from '../styles/Modal.module.scss';
 import { MdClose } from 'react-icons/md';
 import Fade from 'react-reveal/Fade';
 import { Carousel } from 'react-responsive-carousel';
-import image from 'next/image';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Modal = ({
@@ -34,7 +33,7 @@ const Modal = ({
   return (
     <>
       {modalShow && (
-        <Fade>
+        <Fade bottom>
           <div className={Styles.background}>
             <Fade top>
               <div className={Styles.modalWrapper}>

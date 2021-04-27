@@ -89,11 +89,12 @@ $dark: #131e29;
   z-index: 10;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 598px) {
   .modalWrapper {
-    border-radius: 0;
+    border-radius: 15px 15px 0px 0px;
     width: 100%;
-    height: 70%;
+    margin-top: 20%;
+    height: 90%;
     grid-template-columns: 1fr;
   }
   .modalImg {
@@ -127,7 +128,7 @@ $dark: #131e29;
   }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 598px) {
   .modalImg {
     display: none;
   }
