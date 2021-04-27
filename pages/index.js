@@ -5,9 +5,10 @@ import SmallNav from '../components/SmallNav';
 import Header from '../components/Header';
 import About from '../components/About';
 import Projects from '../components/projects';
-import Media from 'react-media';
-
+import useWindowDimensions from '../hooks/useWindowDimensions';
 const Home = () => {
+  const { width } = useWindowDimensions();
+
   return (
     <div className={Main.container}>
       <Head id='head'>
@@ -23,12 +24,7 @@ const Home = () => {
         <meta name='author' content='Quinten Aiton' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <Media query={{ maxWidth: 420 }}>
-        <SmallNav />
-      </Media>
-      <Media query={{ minWidth: 420 }}>
-        <BigNav />
-      </Media>
+      {width <= 420 ? <SmallNav /> : <BigNav />}
       <Header />
       <About />
       <Projects />

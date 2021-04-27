@@ -12,13 +12,13 @@ const BigNav = () => {
       <nav className={Styles.container}>
         <Image
           className={Styles.image}
-          src='/logo.png'
+          src='/Logo.png'
           alt='logo'
           height={130}
           width={130}
         />
-        <div className={Styles.items}>
-          <ul className={Styles.links}>
+        <div className={Styles.links}>
+          <ul>
             <li>
               <Link href='#about'>
                 <a>About</a>

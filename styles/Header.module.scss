@@ -12,10 +12,10 @@ $dark: #131e29;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .typing {
-  position: absolute;
   top: 35vh;
   display: flex;
   flex-direction: column;
@@ -35,13 +35,13 @@ $dark: #131e29;
     border-right: 0.15em solid $primary;
     white-space: nowrap;
     overflow: hidden;
+    color: $text;
   }
 
   p:nth-child(1) {
     width: 30%;
     margin: 0;
     text-transform: uppercase;
-    color: $text;
     -webkit-animation: type 1s steps(40, end);
     animation: type 1s steps(40, end);
     -webkit-animation-fill-mode: forwards;
@@ -171,7 +171,6 @@ $dark: #131e29;
 @media (max-width: 420px) {
   .container {
     width: 100%;
-    overflow: hidden;
   }
   .typing {
     font-size: 0.7rem;

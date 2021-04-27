@@ -11,16 +11,8 @@ const projects = () => {
     surfSwap: false,
     interview: false,
     tinyApp: false,
+    travellersHandbook: false,
   });
-
-  useEffect(() => {
-    modalShow.familyMatterz ||
-    modalShow.pinnet ||
-    modalShow.surfSwap ||
-    modalShow.tinyApp
-      ? (document.body.style.overflow = 'hidden')
-      : (document.body.style.overflow = 'unset');
-  }, [modalShow]);
 
   return (
     <Roll right top>
@@ -59,7 +51,7 @@ const projects = () => {
               title='Family Matterz'
               description='Built on a 2 week deadline, this web application was designed with the needs of groups and families to stay connected in a safe, familiar and convenient environment. Built as a mobile web app on a stack of React, NodeJs, and MongoDb, Family Matterz takes the guesswork out of organizing and saves time for the things that matter most, family.'
               stack={['MongoDB', 'Express', 'React', 'Node']}
-              images={['/familyMatters.png']}
+              images={['/familyMatters.png', '/FamilyMatterz2.png']}
               modalShow={modalShow.familyMatterz}
               modalClose={() =>
                 setModalShow({ ...modalShow, familyMatterz: false })
@@ -83,7 +75,7 @@ const projects = () => {
             </div>
             <Modal
               title='Pinnet'
-              description='Built on a 2 week deadline, this web application was designed with the needs of groups and families to stay connected in a safe, familiar and convenient environment. Built as a mobile web app on a stack of React, NodeJs, and MongoDb, Family Matterz takes the guesswork out of organizing and saves time for the things that matter most, family.'
+              description='Pinterest-inspired resource wall app. Users can explore, save, and organize links to their favorite resources and like, comment or rate those of others.'
               stack={['PostgreSQL', 'Express', 'EJS', 'Node']}
               images={['/my-pins.png', '/new-pin-form.png']}
               modalShow={modalShow.pinnet}
@@ -107,7 +99,7 @@ const projects = () => {
             </div>
             <Modal
               title='Surf Swap'
-              description='Built on a 2 week deadline, this web application was designed with the needs of groups and families to stay connected in a safe, familiar and convenient environment. Built as a mobile web app on a stack of React, NodeJs, and MongoDb, Family Matterz takes the guesswork out of organizing and saves time for the things that matter most, family.'
+              description='Surfing community hub that lets users create a profile, browse and purchase surf equipment, interact with fellow surfers through forums and ride shares and check the latest surf reports.'
               stack={['MongoDB', 'Express', 'EJS', 'Node']}
               images={[
                 '/SurfShareHome.png',
@@ -141,7 +133,7 @@ const projects = () => {
             </div>
             <Modal
               title='Interview Schedular'
-              description='Built on a 2 week deadline, this web application was designed with the needs of groups and families to stay connected in a safe, familiar and convenient environment. Built as a mobile web app on a stack of React, NodeJs, and MongoDb, Family Matterz takes the guesswork out of organizing and saves time for the things that matter most, family.'
+              description='Interview Scheduler is a full stack web application that allows for users to create, manage and organize their interviews in an effort to help stream line the hiring process.'
               stack={['PostgreSQL', 'React', 'Express', 'Node']}
               images={[
                 '/Interview-Home.png',
@@ -171,7 +163,7 @@ const projects = () => {
             </div>
             <Modal
               title='TinyApp'
-              description='Built on a 2 week deadline, this web application was designed with the needs of groups and families to stay connected in a safe, familiar and convenient environment. Built as a mobile web app on a stack of React, NodeJs, and MongoDb, Family Matterz takes the guesswork out of organizing and saves time for the things that matter most, family.'
+              description='TinyApp is a full stack web application built with Node and Express that allows users to create an account and keep a list of their favourite URLs in a shortend form (à la bit.ly).'
               stack={['MongoDB', 'Express', 'EJS', 'Node']}
               images={['/Login.png', '/URLs_home.png', '/Create_URL.png']}
               modalShow={modalShow.tinyApp}
@@ -187,7 +179,9 @@ const projects = () => {
               <div className={Styles.text}>
                 <p>Travellers Handbook</p>
                 <button
-                  onClick={() => setModalShow({ ...modalShow, tinyApp: true })}
+                  onClick={() =>
+                    setModalShow({ ...modalShow, travellersHandbook: true })
+                  }
                 >
                   Show More
                 </button>
@@ -195,10 +189,10 @@ const projects = () => {
             </div>
             <Modal
               title='Travellers Handbook'
-              description='Built on a 2 week deadline, this web application was designed with the needs of groups and families to stay connected in a safe, familiar and convenient environment. Built as a mobile web app on a stack of React, NodeJs, and MongoDb, Family Matterz takes the guesswork out of organizing and saves time for the things that matter most, family.'
+              description='Travellers Handbook is a campsite database that allows users to add, rate and comment on campsites.'
               stack={['MongoDB', 'Express', 'EJS', 'Node']}
               images={['/Login.png', '/URLs_home.png', '/Create_URL.png']}
-              modalShow={modalShow.tinyApp}
+              modalShow={modalShow.travellersHandbook}
               modalClose={() => setModalShow({ ...modalShow, tinyApp: false })}
             />
           </div>

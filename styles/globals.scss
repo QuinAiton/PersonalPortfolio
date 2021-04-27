@@ -33,10 +33,12 @@ body {
 .carousel .thumbs-wrapper {
   margin: 0;
 }
+.thumbs-wrapper {
+  margin: 0;
+}
 
 @media (max-width: 420px) {
   body {
     width: 100%;
-    overflow: hidden;
   }
 }
