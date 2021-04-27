@@ -6,7 +6,7 @@ import SmallNav from '../components/SmallNav';
 import Header from '../components/Header';
 import About from '../components/About';
 import Projects from '../components/projects';
-import useWindowDimensions from '../hooks/useWindowDimensions';
+import useWindowDimensions from '../components/hooks/useWindowDimensions';
 const Home = () => {
   const { width } = useWindowDimensions();
   return (
