@@ -79,12 +79,14 @@ const About = () => {
         <div className={Styles.container2}>
           <div className={Styles.bio}>
             <Rotate top>
-              <Image
-                src='/NeahBay.jpg'
-                alt='profile'
-                height={500}
-                width={500}
-              />
+              <div className={Styles.img}>
+                <Image
+                  src='/NeahBay.jpg'
+                  alt='profile'
+                  height={600}
+                  width={600}
+                />
+              </div>
             </Rotate>
             <Bounce left>
               <p>

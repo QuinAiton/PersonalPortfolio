@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Main from '../styles/Home.module.scss';
 import Head from 'next/head';
 import BigNav from '../components/BigNav';
@@ -8,11 +9,11 @@ import Projects from '../components/projects';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 const Home = () => {
   const { width } = useWindowDimensions();
-
   return (
     <div className={Main.container}>
       <Head id='head'>
         <title>Quinten Aiton's Web Development Portfolio</title>
+        <meta charset='utf-8' />
         <meta
           name='keywords'
           content='HTML, CSS, JavaScript, React, Next, full stack developer, Web developer, software development'
@@ -24,7 +25,7 @@ const Home = () => {
         <meta name='author' content='Quinten Aiton' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      {width <= 420 ? <SmallNav /> : <BigNav />}
+      {width <= 768 ? <SmallNav /> : <BigNav />}
       <Header />
       <About />
       <Projects />
