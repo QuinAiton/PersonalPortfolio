@@ -78,6 +78,8 @@ $secondary: #192633;
 
   img {
     border-radius: 20px;
+    height: auto;
+    width: 100%;
   }
 
   p {
@@ -102,7 +104,7 @@ $secondary: #192633;
   width: 40%;
   padding: 20px;
   color: $text;
-  font-size: 1vw;
+  font-size: 15px;
 }
 
 .bar {
@@ -207,9 +209,10 @@ $secondary: #192633;
     img {
       border-radius: 0;
       border-radius: 10px 10px 0 0;
+      width: 700px;
     }
     p {
-      font-size: 2vw;
+      font-size: 2.5vw;
       border-radius: 0;
       border: none;
       left: 0;

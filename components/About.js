@@ -83,8 +83,8 @@ const About = () => {
                 <Image
                   src='/NeahBay.jpg'
                   alt='profile'
-                  height={600}
-                  width={600}
+                  height={400}
+                  width={400}
                 />
               </div>
             </Rotate>
