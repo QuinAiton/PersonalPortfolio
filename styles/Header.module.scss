@@ -169,8 +169,16 @@ $dark: #131e29;
 }
 
 @media (max-width: 420px) {
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
   .typing {
     font-size: 0.7rem;
+
+    p:nth-child(4) {
+      width: 82%;
+    }
   }
   .explore {
     bottom: 40px;
