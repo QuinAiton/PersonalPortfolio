@@ -1,73 +1,56 @@
 import React, { useState } from 'react';
-import Styles from '../styles/SmallNav.module.scss';
 import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { VscGithub } from 'react-icons/vsc';
+import { IoPersonCircleOutline } from 'react-icons/io5';
+import { BsBriefcaseFill } from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
 import Image from 'next/image';
 import Link from 'next/link';
+import Styles from '../styles/SmallNav.module.scss';
 const SmallNav = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <Fade top>
-      {isOpen ? (
-        <Fade top>
-          <nav className={Styles.container}>
-            <div className={Styles.exit} onClick={() => setOpen(false)}>
-              <span>+</span>
-            </div>
-            <div className={Styles.items}>
-              <ul className={Styles.links}>
-                <li>
-                  <Link href='#about'>
-                    <a>About</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href='#projects'>
-                    <a>Projects</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <ul className={Styles.contact}>
-              <li>
-                <a href='https://github.com/quinaiton' target='_blank'>
-                  <VscGithub className={Styles.icon} />
-                </a>
-              </li>
-              <li>
-                <a
-                  href='https://www.linkedin.com/in/quinten-aiton/'
-                  target='_blank'
-                >
-                  <FaLinkedin className={Styles.icon} />
-                </a>
-              </li>
-              <li>
-                <a href='mailto:quinaiton@pm.me' target='_blank'>
-                  <FaEnvelope className={Styles.icon} />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </Fade>
-      ) : (
-        <div className={Styles.menu}>
-          <div className={Styles.hamburger} onClick={() => setOpen(true)}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <Image
-            className={Styles.image}
-            src='/logo.png'
-            alt='logo'
-            height={100}
-            width={100}
-          />
-        </div>
-      )}
-    </Fade>
+    <nav className={Styles.container} role='navigation'>
+      <div className={Styles.menuToggle}>
+        <input type='checkbox' />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul className={Styles.menu}>
+          <li>
+            <Link href='#about'>
+              <a>
+                <IoPersonCircleOutline className={Styles.icon} /> About
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href='#projects'>
+              <a>
+                <BsBriefcaseFill className={Styles.icon} />
+                Projects
+              </a>
+            </Link>
+          </li>
+          <li>
+            <a href='https://github.com/quinaiton' target='_blank'>
+              <VscGithub className={Styles.icon} /> Github
+            </a>
+          </li>
+          <li>
+            <a href='https://www.linkedin.com/in/quinten-aiton' target='_blank'>
+              <FaLinkedin className={Styles.icon} /> linkedin
+            </a>
+          </li>
+          <li>
+            <a href='mailto:quinaiton@pm.me' target='_blank'>
+              <FaEnvelope className={Styles.icon} />
+              Contact Me
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
