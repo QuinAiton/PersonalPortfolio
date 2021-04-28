@@ -101,7 +101,8 @@ $dark: #131e29;
     display: none;
   }
   .modalContent {
-    width: 90%;
+    width: 95%;
+
     h2 {
       font-size: 20px;
     }
@@ -119,7 +120,7 @@ $dark: #131e29;
       font-size: 15px;
 
       li {
-        margin: 10px;
+        margin: auto auto;
       }
     }
   }
