@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import Roll from 'react-reveal/Roll';
 import Modal from './Modal';
+
 const projects = () => {
   const [modalShow, setModalShow] = useState({
     familyMatterz: false,
@@ -51,7 +52,11 @@ const projects = () => {
               title='Family Matterz'
               description='Built on a 2 week deadline, this web application was designed with the needs of groups and families to stay connected in a safe, familiar and convenient environment. Built as a mobile web app on a stack of React, NodeJs, and MongoDb, Family Matterz takes the guesswork out of organizing and saves time for the things that matter most, family.'
               stack={['MongoDB', 'Express', 'React', 'Node']}
-              images={['/familyMatters.png', '/FamilyMatterz2.png']}
+              images={[
+                '/familyMatters.png',
+                '/FamilyMatterz2.png',
+                '/FamilyMatterz3.png',
+              ]}
               modalShow={modalShow.familyMatterz}
               modalClose={() =>
                 setModalShow({ ...modalShow, familyMatterz: false })
@@ -116,7 +121,7 @@ const projects = () => {
               <div className={Styles.image}>
                 <Image
                   src='/Interview-Home.png'
-                  alt='SurfShare'
+                  alt='Interview Scheduler'
                   layout='fill'
                 />
               </div>
@@ -150,7 +155,7 @@ const projects = () => {
           <div className={Styles.card}>
             <div className={Styles.item}>
               <div className={Styles.image}>
-                <Image src='/Login.png' alt='SurfShare' layout='fill' />
+                <Image src='/Login.png' alt='TinyApp' layout='fill' />
               </div>
               <div className={Styles.text}>
                 <p>Tiny App</p>
@@ -174,7 +179,11 @@ const projects = () => {
           <div className={Styles.card}>
             <div className={Styles.item}>
               <div className={Styles.image}>
-                <Image src='/Login.png' alt='SurfShare' layout='fill' />
+                <Image
+                  src='/travellersHandbook.png'
+                  alt='travellersHandbook'
+                  layout='fill'
+                />
               </div>
               <div className={Styles.text}>
                 <p>Travellers Handbook</p>
@@ -191,9 +200,15 @@ const projects = () => {
               title='Travellers Handbook'
               description='Travellers Handbook is a campsite database that allows users to add, rate and comment on campsites.'
               stack={['MongoDB', 'Express', 'EJS', 'Node']}
-              images={['/Login.png', '/URLs_home.png', '/Create_URL.png']}
+              images={[
+                '/travellersHandbook.png',
+                '/travellersHandbook2.png',
+                '/TravellersHandbook3.png',
+              ]}
               modalShow={modalShow.travellersHandbook}
-              modalClose={() => setModalShow({ ...modalShow, tinyApp: false })}
+              modalClose={() =>
+                setModalShow({ ...modalShow, travellersHandbook: false })
+              }
             />
           </div>
         </div>
