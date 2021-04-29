@@ -98,12 +98,12 @@ const About = () => {
                 applications for the web and have a passion for green tech. I am
                 both driven and self-motivated, and I am constantly
                 experimenting with new technologies and techniques. I am very
-                passionate about Web Development, and am always looking for
+                passionate about Web Development, and always looking for
                 opportunities to better myself as a developer.
                 <br />
-                When Im not at my desk, you can find my looking for waves on the
-                west coast, exploring the beautiful mountains BC has to offer or
-                in the skate park working on some new tricks.
+                When Im not at my desk, you can find me looking for waves on the
+                west coast, exploring the beautiful mountains BC has to offer,
+                or in the skate park working on some new tricks.
               </p>
             </Bounce>
           </div>
