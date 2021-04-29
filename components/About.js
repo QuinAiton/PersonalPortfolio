@@ -119,7 +119,7 @@ const About = () => {
             <Bounce right>
               <p>CSS</p>
               <div className={Styles.bar}>
-                <div className={`${Styles.percentage}, ${Styles.css}`}>90%</div>
+                <div className={`${Styles.percentage}, ${Styles.css}`}>80%</div>
               </div>
             </Bounce>
             <Bounce right>
@@ -129,25 +129,25 @@ const About = () => {
               </div>
             </Bounce>
             <Bounce right>
-              <p>React js</p>
+              <p>React.js</p>
               <div className={Styles.bar}>
                 <div className={`${Styles.percentage}, ${Styles.react}`}>
-                  85%
+                  75%
                 </div>
               </div>
             </Bounce>
             <Bounce right>
-              <p>Next js</p>
+              <p>Next.js</p>
               <div className={Styles.bar}>
                 <div className={`${Styles.percentage}, ${Styles.next}`}>
-                  80%
+                  70%
                 </div>
               </div>
             </Bounce>
             <Bounce right>
-              <p>Express</p>
+              <p>Node.js</p>
               <div className={Styles.bar}>
-                <div className={`${Styles.percentage}, ${Styles.express}`}>
+                <div className={`${Styles.percentage}, ${Styles.node}`}>
                   85%
                 </div>
               </div>
@@ -155,7 +155,7 @@ const About = () => {
             <Bounce right>
               <p>Mongo DB</p>
               <div className={Styles.bar}>
-                <div className={`${Styles.percentage}, ${Styles.express}`}>
+                <div className={`${Styles.percentage}, ${Styles.mongo}`}>
                   85%
                 </div>
               </div>
@@ -164,7 +164,15 @@ const About = () => {
               <p>PostGreSQL</p>
               <div className={Styles.bar}>
                 <div className={`${Styles.percentage}, ${Styles.postgres}`}>
-                  80%
+                  70%
+                </div>
+              </div>
+            </Bounce>
+            <Bounce right>
+              <p>Python</p>
+              <div className={Styles.bar}>
+                <div className={`${Styles.percentage}, ${Styles.python}`}>
+                  60%
                 </div>
               </div>
             </Bounce>

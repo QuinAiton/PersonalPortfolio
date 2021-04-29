@@ -124,7 +124,7 @@ $secondary: #192633;
     animation: fade-bar 1s ease;
   }
   .css {
-    width: 90%;
+    width: 80%;
     animation: fade-bar 1s ease-in;
   }
   .js {
@@ -132,19 +132,27 @@ $secondary: #192633;
     animation: fade-bar 1s ease-in-out;
   }
   .react {
-    width: 85%;
+    width: 75%;
     animation: fade-bar 1s ease-out;
   }
   .next {
-    width: 80%;
+    width: 70%;
     animation: fade-bar 1s ease-in-out;
   }
-  .express {
+  .node {
+    width: 85%;
+    animation: fade-bar 1s ease;
+  }
+  .mongo {
     width: 85%;
     animation: fade-bar 1s ease;
   }
   .postgres {
-    width: 80%;
+    width: 70%;
+    animation: fade-bar 1s ease-out;
+  }
+  .python {
+    width: 60%;
     animation: fade-bar 1s ease-out;
   }
 }
