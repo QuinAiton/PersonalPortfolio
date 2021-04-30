@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Styles from '../styles/Modal.module.scss';
 import { MdClose } from 'react-icons/md';
 import Fade from 'react-reveal/Fade';
@@ -33,29 +32,24 @@ const Modal = ({
   return (
     <>
       {modalShow && (
-        <Fade bottom>
-          <div className={Styles.background}>
-            <Fade top>
-              <div className={Styles.modalWrapper}>
-                <Carousel className={Styles.modalImg}>{imageItems}</Carousel>
-                <div className={Styles.modalContent}>
-                  <h2>{title}</h2>
-                  <p>{description}</p>
-                  <div>
-                    <h4>Tech Stack</h4>
-                    <ul>{stackItem}</ul>
-                  </div>
-                </div>
-                <div
-                  className={Styles.closeModalButton}
-                  aria-label='Close Modal'
-                >
-                  <MdClose onClick={modalClose} />
+        <div className={Styles.background}>
+          <Fade bottom>
+            <div className={Styles.modalWrapper}>
+              <Carousel className={Styles.modalImg}>{imageItems}</Carousel>
+              <div className={Styles.modalContent}>
+                <h2>{title}</h2>
+                <p>{description}</p>
+                <div>
+                  <h4>Tech Stack</h4>
+                  <ul>{stackItem}</ul>
                 </div>
               </div>
-            </Fade>
-          </div>
-        </Fade>
+              <div className={Styles.closeModalButton} aria-label='Close Modal'>
+                <MdClose onClick={modalClose} />
+              </div>
+            </div>
+          </Fade>
+        </div>
       )}
     </>
   );

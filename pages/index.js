@@ -13,13 +13,13 @@ const Home = () => {
     <div className={Main.container}>
       <Head id='head'>
         <title>Quinten Aiton's Web Development Portfolio</title>
-        <meta charset='utf-8' />
+        <meta charSet='utf-8' />
         <meta
           name='keywords'
           content='HTML, CSS, JavaScript, React, Next, full stack developer, Web developer, software development'
         />
         <meta
-          description='og:title'
+          name='description'
           content='Website portfolio for Victoria, British Columbia Full-stack web developer Quinten Aiton. This site showcases Quintens web development skills such as: Javascript, Node, Express and React, Past Projects and blog posts.'
         />
         <meta name='author' content='Quinten Aiton' />

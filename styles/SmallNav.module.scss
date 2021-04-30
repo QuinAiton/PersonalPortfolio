@@ -3,7 +3,6 @@ $primary: #87f5c3;
 $secondary: #192633;
 
 .container {
-  position: relative;
   height: 0;
   z-index: 1;
   position: relative;
@@ -70,9 +69,13 @@ $secondary: #192633;
   span:first-child {
     transform-origin: 0% 0%;
   }
+  span:nth-child(3) {
+    width: 20px;
+  }
 
   span:nth-last-child(2) {
     transform-origin: 0% 100%;
+    width: 15px;
   }
 
   input:checked ~ span {
@@ -87,6 +90,7 @@ $secondary: #192633;
 
   input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
+    width: 29px;
   }
   input:checked ~ ul {
     transform: none;
@@ -96,16 +100,16 @@ $secondary: #192633;
 .menu {
   background-color: $primary;
   position: absolute;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
-  box-shadow: 0 0 10px #85888c;
   margin: -50px 0 0 -50px;
-  padding: 50px;
+  padding: 30px;
   padding-top: 125px;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  border-radius: 30px;
 
   li {
     transition-delay: 2s;

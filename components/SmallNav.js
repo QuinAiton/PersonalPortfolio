@@ -3,12 +3,9 @@ import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { VscGithub } from 'react-icons/vsc';
 import { IoPersonCircleOutline } from 'react-icons/io5';
 import { BsBriefcaseFill } from 'react-icons/bs';
-import Fade from 'react-reveal/Fade';
-import Image from 'next/image';
 import Link from 'next/link';
 import Styles from '../styles/SmallNav.module.scss';
 const SmallNav = () => {
-  const [isOpen, setOpen] = useState(false);
   return (
     <nav className={Styles.container} role='navigation'>
       <div className={Styles.menuToggle}>

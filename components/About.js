@@ -29,7 +29,7 @@ const About = () => {
               />
               <div className={Styles.cardBody}>
                 <h2>Speed</h2>
-                <p>Fast load times, happy users and better SEO Scores</p>
+                <p>Fast load times, happy users and better SEO scores</p>
               </div>
             </div>
             <div className={Styles.interestCard}>
