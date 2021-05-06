@@ -27,7 +27,7 @@ const About = () => {
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h2>Speed</h2>
+                <h2>Fast</h2>
                 <p>Fast load times, happy users and better SEO scores</p>
               </div>
             </div>
