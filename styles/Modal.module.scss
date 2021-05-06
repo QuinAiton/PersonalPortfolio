@@ -21,7 +21,7 @@ $dark: #131e29;
   display: grid;
   grid-template-columns: 2fr 1fr;
   width: 80%;
-  height: 90%;
+  height: 80%;
   box-shadow: 0 5px 16px rgb(0, 0, 0);
   background-color: $secondary;
   position: relative;
@@ -63,8 +63,12 @@ $dark: #131e29;
     color: $dark;
     border: none;
   }
+  h2 {
+    color: $primary;
+  }
   h4 {
     text-align: center;
+    color: $primary;
   }
   ul {
     display: grid;
@@ -72,8 +76,27 @@ $dark: #131e29;
     list-style: none;
     li {
       padding: 10px;
+      text-align: center;
     }
   }
+}
+.code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 100%;
+  p {
+    margin: 0;
+    padding-right: 10px;
+  }
+}
+
+.code:hover {
+  background-color: $dark;
+  border: 1px solid $primary;
+  color: $primary;
 }
 
 .closeModalButton {
@@ -136,8 +159,8 @@ $dark: #131e29;
 
 @media (max-width: 1050px) {
   .modalWrapper {
-    height: 80%;
-    width: 95%;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }

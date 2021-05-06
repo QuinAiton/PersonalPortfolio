@@ -61,6 +61,7 @@ const projects = () => {
               modalClose={() =>
                 setModalShow({ ...modalShow, familyMatterz: false })
               }
+              link={'https://github.com/Sirrom84/Family-Matterz.git'}
             />
           </div>
 
@@ -85,6 +86,7 @@ const projects = () => {
               images={['/my-pins.png', '/new-pin-form.png']}
               modalShow={modalShow.pinnet}
               modalClose={() => setModalShow({ ...modalShow, pinnet: false })}
+              link={'https://github.com/ericos-bennett/pinnet.git'}
             />
           </div>
 
@@ -114,6 +116,7 @@ const projects = () => {
               ]}
               modalShow={modalShow.surfSwap}
               modalClose={() => setModalShow({ ...modalShow, surfSwap: false })}
+              link={'https://github.com/QuinAiton/SurfShare.git'}
             />
           </div>
           <div className={Styles.card}>
@@ -149,6 +152,7 @@ const projects = () => {
               modalClose={() =>
                 setModalShow({ ...modalShow, interview: false })
               }
+              link={'https://github.com/QuinAiton/Interview-Scheduler.git'}
             />
           </div>
 
@@ -173,6 +177,7 @@ const projects = () => {
               images={['/Login.png', '/URLs_home.png', '/Create_URL.png']}
               modalShow={modalShow.tinyApp}
               modalClose={() => setModalShow({ ...modalShow, tinyApp: false })}
+              link={'https://github.com/QuinAiton/tinyApp.git'}
             />
           </div>
 
@@ -209,6 +214,7 @@ const projects = () => {
               modalClose={() =>
                 setModalShow({ ...modalShow, travellersHandbook: false })
               }
+              link={'https://github.com/QuinAiton/TravellersHandbook.git'}
             />
           </div>
         </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import Styles from '../styles/Modal.module.scss';
-import { MdClose } from 'react-icons/md';
-import Fade from 'react-reveal/Fade';
-import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
+import { MdClose } from 'react-icons/md';
+import { Carousel } from 'react-responsive-carousel';
+import { FiGithub } from 'react-icons/fi';
+import Fade from 'react-reveal/Fade';
 const Modal = ({
   modalClose,
   modalShow,
@@ -12,6 +12,7 @@ const Modal = ({
   description,
   stack,
   images,
+  link,
 }) => {
   const stackItem = stack.map((item, index) => {
     return (
@@ -42,6 +43,12 @@ const Modal = ({
                 <div>
                   <h4>Tech Stack</h4>
                   <ul>{stackItem}</ul>
+                  <a href={link} target='_blank'>
+                    <button className={Styles.code}>
+                      <p>CODE</p>
+                      <FiGithub />
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className={Styles.closeModalButton} aria-label='Close Modal'>

@@ -16,7 +16,6 @@ const About = () => {
           <div className={Styles.underline}></div>
         </Fade>
       </div>
-
       <div className={Styles.content}>
         <Bounce left cascade>
           <div className={Styles.container1}>
