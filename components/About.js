@@ -21,7 +21,7 @@ const About = () => {
           <div className={Styles.container1}>
             <div className={Styles.interestCard}>
               <Image
-                src='/fast.png'
+                src='/fast.svg'
                 alt='speed card'
                 height={100}
                 width={100}
@@ -40,15 +40,12 @@ const About = () => {
               />
               <div className={Styles.cardBody}>
                 <h2>Responsive</h2>
-                <p>
-                  Web pages created to provide exceptional user experiences
-                  across all devices.
-                </p>
+                <p>Provide exceptional user experiences across all devices.</p>
               </div>
             </div>
             <div className={Styles.interestCard}>
               <Image
-                src='/intuitive.png'
+                src='/intuitive.svg'
                 alt='intuitive card'
                 height={100}
                 width={100}
@@ -60,16 +57,16 @@ const About = () => {
             </div>
             <div className={Styles.interestCard}>
               <Image
-                src='/dynamic.png'
+                src='/dynamic.svg'
                 alt='dynamic card'
                 height={100}
                 width={100}
               />
               <div className={Styles.cardBody}>
-                <h2>Dynamic</h2>
+                <h2>Database driven</h2>
                 <p>
-                  Sites that are database driven giving unique experiences
-                  tailored to each user.
+                  Applications created to give unique experiences tailored to
+                  each user.
                 </p>
               </div>
             </div>
