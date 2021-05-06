@@ -81,3 +81,19 @@ $dark: #131e29;
   left: 200px;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 0;
+    min-height: 100vh;
+  }
+  .footer {
+    margin: auto auto;
+  }
+  .squiggle {
+    display: none;
+  }
+  .hire {
+    display: none;
+  }
+}
