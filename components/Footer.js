@@ -3,6 +3,7 @@ import Styles from '../styles/Footer.module.scss';
 import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { VscGithub } from 'react-icons/vsc';
 import { FaRegCopyright } from 'react-icons/fa';
+import Bounce from 'react-reveal/Bounce';
 const Footer = () => {
   return (
     <div className={Styles.container}>
@@ -28,8 +29,10 @@ const Footer = () => {
         <p>
           A10-Development <FaRegCopyright className={Styles.copy} /> 2021
         </p>
-        <img className={Styles.squiggle} src='/squiggle.svg' height='250px' />
-        <p className={Styles.hire}>Hire Me!</p>
+        <Bounce right>
+          <img className={Styles.squiggle} src='/squiggle.svg' height='250px' />
+          <p className={Styles.hire}>Hire Me!</p>
+        </Bounce>
       </div>
     </div>
   );
