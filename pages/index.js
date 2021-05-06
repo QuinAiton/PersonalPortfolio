@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import About from '../components/About';
 import Projects from '../components/projects';
 import useWindowDimensions from '../components/hooks/useWindowDimensions';
+import Footer from '../components/Footer';
 const Home = () => {
   const { width } = useWindowDimensions();
   return (
@@ -29,6 +30,7 @@ const Home = () => {
       <Header />
       <About />
       <Projects />
+      <Footer />
     </div>
   );
 };
