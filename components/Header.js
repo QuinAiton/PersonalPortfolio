@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import Styles from '../styles/Header.module.scss';
 import Fade from 'react-reveal/Fade';
-
+import ParticlesContainer from './particles';
 const Header = () => {
   return (
     <div className={Styles.container}>
+                {/* <ParticlesContainer /> */}
+
       <div className={Styles.typing}>
         <p>Hello world!</p>
         <p>

@@ -16,7 +16,6 @@ const projects = () => {
   });
 
   return (
-    <Roll right top>
       <div id='projects' className={Styles.container}>
         <div className={Styles.title}>
           <Fade top>
@@ -219,7 +218,6 @@ const projects = () => {
           </div>
         </div>
       </div>
-    </Roll>
   );
 };
 
