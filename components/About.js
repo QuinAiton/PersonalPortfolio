@@ -5,8 +5,10 @@ import Fade from 'react-reveal/Fade';
 import Rotate from 'react-reveal/Rotate';
 import Image from 'next/image';
 import TagSphere from './TagSphere';
-
+import useWindowDimensions from './hooks/useWindowDimensions';
 const About = () => {
+	const { width } = useWindowDimensions();
+
 	return (
 		<div id="about" className={Styles.container}>
 			<div className={Styles.title}>
@@ -52,11 +54,11 @@ const About = () => {
 				</Bounce>
 				<div className={Styles.container2}>
 					<div className={Styles.bio}>
-						<Rotate top>
+						<Bounce left>
 							<div className={Styles.img}>
 								<Image src="/NeahBay.jpg" alt="profile" height={400} width={400} />
 							</div>
-						</Rotate>
+						</Bounce>
 						<Bounce left>
 							<p>
 								My name is Quinten Aiton and I am a full-stack developer, currently living in Victoria, BC. I have a
@@ -72,7 +74,7 @@ const About = () => {
 						</Bounce>
 					</div>
 					<div className={Styles.sphere}>
-						<TagSphere radius={350} />
+						<TagSphere radius={300} />
 					</div>
 				</div>
 			</div>
